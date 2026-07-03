@@ -8,6 +8,8 @@ from flask import Flask, request, jsonify
 from lang_detector import detect_language
 from sentiment_model import analyze_sentiment
 from emotion_model import analyze_emotion
+from distortion_model import detect_distortions
+from reframing_engine import reframe_distortions
 
 # Import DB functions
 from database import init_db, save_journal_entry, save_analysis_result
@@ -50,13 +52,15 @@ def analyze():
     # 3. Emotion Analysis
     emotions = analyze_emotion(text, language_code)
     
-    # 4. Cognitive Distortions (Mocked for now until Step 7)
-    # TODO: Integrate distortion_model.py once implemented
-    distortions = []
+    # Need to get English translation if not English, for distortion detection
+    from emotion_model import translate_to_english
+    english_text = translate_to_english(text, language_code)
     
-    # 5. Reframing (Mocked for now until Step 8)
-    # TODO: Integrate reframing_engine.py once implemented
-    reframings = []
+    # 4. Cognitive Distortions
+    distortions = detect_distortions(english_text if language_code != "en" else text)
+    
+    # 5. Reframing
+    reframings = reframe_distortions(text, distortions)
     
     processing_time_ms = int((time.time() - start_time) * 1000)
     timestamp = datetime.utcnow().isoformat()
