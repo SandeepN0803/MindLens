@@ -19,7 +19,7 @@ def load_emotion_model() -> None:
             _emotion_pipeline = pipeline(
                 "text-classification",
                 model="j-hartmann/emotion-english-distilroberta-base",
-                return_all_scores=True
+                top_k=None
             )
         except Exception as e:
             logger.error(f"Failed to load Emotion model: {e}")

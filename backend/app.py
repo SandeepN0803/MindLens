@@ -2,7 +2,7 @@ import time
 import uuid
 import logging
 from datetime import datetime
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 
 # Import ML pipeline modules
 from lang_detector import detect_language
@@ -22,6 +22,10 @@ app = Flask(__name__)
 # Initialize database on startup
 init_db()
 
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html")
+
 @app.route("/api/analyze", methods=["POST"])
 def analyze():
     """
@@ -40,11 +44,20 @@ def analyze():
     entry_id = str(uuid.uuid4())
     result_id = str(uuid.uuid4())
     
+    user_language = data.get("user_language", "auto")
+    
     # 1. Language Detection
-    lang_result = detect_language(text)
-    detected_language = lang_result["language"]
-    language_code = lang_result["language_code"]
-    language_confidence = lang_result["confidence"]
+    if user_language == "auto":
+        lang_result = detect_language(text)
+        detected_language = lang_result["language"]
+        language_code = lang_result["language_code"]
+        language_confidence = lang_result["confidence"]
+    else:
+        # Map manual language to code
+        lang_map = {"English": "en", "Hindi": "hi", "Kannada": "kn", "Telugu": "te", "Tamil": "ta", "Malayalam": "ml"}
+        language_code = lang_map.get(user_language, "en")
+        detected_language = user_language
+        language_confidence = 1.0
     
     # 2. Sentiment Analysis
     sentiment_result = analyze_sentiment(text, language_code)
