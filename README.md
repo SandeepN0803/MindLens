@@ -32,7 +32,7 @@ Unlike most mental health applications that send sensitive journal data to exter
    ```bash
    python backend/app.py
    ```
-   The Flask server will start on `http://127.0.0.1:5000`.
+   The Flask server will start on `http://127.0.0.1:5001`.
 
 4. **Run the Gradio Demo:**
    To launch the interactive web interface (great for HuggingFace Spaces deployment):

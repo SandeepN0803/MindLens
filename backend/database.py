@@ -136,6 +136,48 @@ def delete_entry(entry_id: str) -> bool:
         cursor.execute("DELETE FROM journal_entries WHERE id = ?", (entry_id,))
         conn.commit()
         return cursor.rowcount > 0
+
+def get_history(user_id: str, limit: int = 10) -> List[Dict[str, Any]]:
+    """
+    Fetches the history of journal entries and their analysis results for a user.
+    """
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT 
+                j.id as entry_id, j.user_id, j.raw_text as input_text, 
+                j.detected_language, j.language_confidence, j.created_at as timestamp,
+                a.sentiment_label, a.sentiment_confidence, 
+                a.emotions_json, a.distortions_json, a.reframings_json, a.processing_time_ms
+            FROM journal_entries j
+            LEFT JOIN analysis_results a ON j.id = a.entry_id
+            WHERE j.user_id = ?
+            ORDER BY j.created_at DESC
+            LIMIT ?
+        """, (user_id, limit))
+        
+        rows = cursor.fetchall()
+        
+        results = []
+        for row in rows:
+            # Reconstruct the response dict to match the analyze endpoint output
+            r = dict(row)
+            results.append({
+                "entry_id": r["entry_id"],
+                "input_text": r["input_text"],
+                "detected_language": r["detected_language"],
+                "language_confidence": r["language_confidence"],
+                "sentiment": {
+                    "label": r["sentiment_label"],
+                    "confidence": r["sentiment_confidence"]
+                },
+                "emotions": json.loads(r["emotions_json"]) if r["emotions_json"] else [],
+                "distortions": json.loads(r["distortions_json"]) if r["distortions_json"] else [],
+                "reframings": json.loads(r["reframings_json"]) if r["reframings_json"] else [],
+                "processing_time_ms": r["processing_time_ms"],
+                "timestamp": r["timestamp"]
+            })
+        return results
         
 if __name__ == "__main__":
     init_db()

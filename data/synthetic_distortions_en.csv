@@ -1,19 +1,1572 @@
-text,distortion_label,language
-"My chest felt tight for a second and now I'm sure something is seriously wrong with my heart.","Magnification and Catastrophizing",en
-"If this project fails, my entire career is over and I'll be homeless.","Magnification and Catastrophizing",en
-"I made one mistake in the presentation, so the whole thing was a complete failure.","Black & White Thinking",en
-"I either get an A on this test or I'm a total failure.","Black & White Thinking",en
-"She didn't reply to my text in an hour, she must think I'm annoying now.","Jumping to Conclusions",en
-"I know I'm going to bomb this exam no matter how much I study.","Jumping to Conclusions",en
-"I forgot her birthday, I always mess up the things that matter to people.","Overgeneralization",en
-"I got rejected from this job, I'll never get hired anywhere.","Overgeneralization",en
-"My friend has been quiet lately, it must be something I did.","Personalization",en
-"It rained on our picnic, it's all my fault for planning it today.","Personalization",en
-"I feel like a fraud at work, so I must actually be bad at my job.","Emotional Reasoning",en
-"I feel so overwhelmed, this situation must be impossible to fix.","Emotional Reasoning",en
-"I should be over this breakup by now, there's something wrong with me for still being sad.","Should Statements",en
-"I must always be productive or I'm wasting my life.","Should Statements",en
-"The performance review had eight positive comments and one suggestion, but all I can think about is that one criticism.","Mental Filter",en
-"I had a great day but I dropped my coffee, so today was ruined.","Mental Filter",en
-"Today was busy but manageable. I got most of my tasks done and had a nice walk in the evening.","No Distortion",en
-"I made a mistake in the meeting, but I corrected it and my manager said it was no big deal.","No Distortion",en
+text,distortion_label,language,template_id
+"I should not feel sad about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I disagreed with my cousin, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"I burned the burger, I am always terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"My mom is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I disagreed with my partner, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+I have to exercise every single day or I am a failure.,Should Statements,en,Should Statements_6
+"My partner is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"If they do not praise me completely, then they must yelled me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I made a typo in the report, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I accomplished everything on my to-do list except one stain, so I am completely wasted.",Mental Filter,en,Mental Filter_9
+"My brother is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My brother is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My colleague got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+I forgot my keys and now my whole month is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The dog is sick, I must have done something harmful to cause it.",Personalization,en,Personalization_6
+"I failed this interview, I hardly ever succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"My colleague is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"There is a scratch in the kitchen, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"Everyone complimented my meal, but one person was quiet, so that person secretly hates it.",Mental Filter,en,Mental Filter_5
+I need to always be busy or I am wasting my life.,Should Statements,en,Should Statements_1
+"I won the election, but I did not beat my personal best, so it was a evil performance.",Mental Filter,en,Mental Filter_6
+"I feel gross today, so everyone must think I am hideous.",Emotional Reasoning,en,Emotional Reasoning_4
+"I got rejected from this promotion, I will hardly ever get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"If they do not love me completely, then they must frowned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"People ought to always be respectful, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I feel like a phony at work, so I must actually be bad at my internship.",Emotional Reasoning,en,Emotional Reasoning_0
+"The proposal will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My boss got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I feel terrified of heights, so they must be inherently dangerous.",Emotional Reasoning,en,Emotional Reasoning_2
+"The deal will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My partner did twenty nice things for me, but forgot to cleaning, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"If I am not the absolute best at coding, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"I tripped on the sidewalk, I am always so incredibly clumsy.",Overgeneralization,en,Overgeneralization_4
+"I am feeling bored about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I failed this presentation, I seldom succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I must not feel lonely about this, I need to just get over it.",Should Statements,en,Should Statements_3
+I know I am going to bomb this presentation no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I feel jealous, so my partner must be doing something wrong.",Emotional Reasoning,en,Emotional Reasoning_8
+"I feel sad about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+"My dad has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+"My sister has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+I should never make a blunder at work.,Should Statements,en,Should Statements_4
+"This TV broke, technology constantly fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"My partner did a dozen nice things for me, but forgot to cleaning, so they do not care at all.",Mental Filter,en,Mental Filter_7
+Today was busy but manageable. I got most of my dishes done and had a nice walk.,No Distortion,en,No Distortion_0
+"I won the contest, but I did not beat my personal best, so it was a terrible performance.",Mental Filter,en,Mental Filter_6
+"I disagreed with my sister, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+I forgot my keys and now my whole day is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I failed this test, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"People need to always be respectful, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I need to have known better, I am so ignorant.",Should Statements,en,Should Statements_7
+"She canceled our {event}, she obviously dreads spending time with me.",Jumping to Conclusions,en,Jumping to Conclusions_8
+"I made a mistake in the report, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I tripped on the sidewalk, I am forever so incredibly uncoordinated.",Overgeneralization,en,Overgeneralization_4
+"I felt a little bored today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"She did not reply to my text in an hour, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"My colleague has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"I accomplished everything on my to-do list except one draft, so I am completely ruined.",Mental Filter,en,Mental Filter_9
+"My brother got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I missed the bike, nothing at all goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"She did not reply to my text in 10 minutes, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I disagreed with my friend, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"I missed the bike, nothing ever goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I feel so stressed, this situation must be impossible to escape.",Emotional Reasoning,en,Emotional Reasoning_1
+"If I am not the absolute best at coding, there is no point in even practicing.",Black & White Thinking,en,Black & White Thinking_6
+"I felt a little nervous today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"I tripped on the sidewalk, I am invariably so incredibly uncoordinated.",Overgeneralization,en,Overgeneralization_4
+"My dad is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My team lost the award, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+"He disagreed with me once, so he is completely rejecting me.",Black & White Thinking,en,Black & White Thinking_7
+"The report will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My boss scheduled a proposal, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel isolated right now, so I must be completely unwanted.",Emotional Reasoning,en,Emotional Reasoning_7
+"If I am not the absolute best at painting, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"He yelled at me, people are constantly so harsh to me.",Overgeneralization,en,Overgeneralization_6
+"My dad left, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My diet is ruined because I ate one donut, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+I either get the best review on this or I am a total idiot.,Black & White Thinking,en,Black & White Thinking_1
+"I failed this exam, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I made one mistake in the project, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"I did not finish all my errands, so today was completely wasted.",Black & White Thinking,en,Black & White Thinking_5
+"If they do not encourage me completely, then they must frowned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"She did not reply to my text in a year, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"The presentation failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"My colleague rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The presentation will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"The {event} was a success, but the leak was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"I am going to fail the exam, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+I either get 100% on this or I am a total fool.,Black & White Thinking,en,Black & White Thinking_1
+"I feel like a fraud at work, so I must actually be bad at my opportunity.",Emotional Reasoning,en,Emotional Reasoning_0
+"I did not finish all my vacuuming, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+"I feel doomed about the future, so things will never get better.",Emotional Reasoning,en,Emotional Reasoning_6
+"I am feeling nervous about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I made a blunder in the report, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+I spilled coffee and now my whole life is a complete tragedy.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The cat is sick, I must have done something bad to cause it.",Personalization,en,Personalization_6
+"My partner did eight nice things for me, but forgot to cleaning, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My boss scheduled a report, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+I have to clean every single day or I am a failure.,Should Statements,en,Should Statements_6
+"This phone broke, technology invariably fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+I need to always be useful or I am wasting my life.,Should Statements,en,Should Statements_1
+"I failed this test, I never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I have not heard back from the interview, they clearly dismissed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel terrified of heights, so they must be inherently unsafe.",Emotional Reasoning,en,Emotional Reasoning_2
+"I lost the election, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"I am feeling upset about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My dad is in a bad mood, I must have offended them.",Personalization,en,Personalization_4
+"My friend criticized, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My colleague is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at math, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"The review had nine positive comments and one suggestion, but all I can think about is that one criticism.",Mental Filter,en,Mental Filter_0
+"If they do not encourage me completely, then they must criticized me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I got a promotion and a raise, but my boss did not love when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I lost my watch, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"I burned the burger, I am constantly terrible at preparing dinner.",Overgeneralization,en,Overgeneralization_2
+"The presentation will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"If I am not the absolute best at math, there is no point in even practicing.",Black & White Thinking,en,Black & White Thinking_6
+"I did not win the race, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"My brother got passed over for a job, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I feel lonely right now, so I must be completely broken.",Emotional Reasoning,en,Emotional Reasoning_7
+"The world should be just, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"She did not reply to my text in a month, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+I either get 100% on this or I am a total failure.,Black & White Thinking,en,Black & White Thinking_1
+"My partner did a dozen nice things for me, but forgot to errands, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"I felt a little sad today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"I feel lonely right now, so I must be completely unlovable.",Emotional Reasoning,en,Emotional Reasoning_7
+I broke the glass and now my whole evening is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"My dad is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I forgot her birthday, I constantly mess up the things that matter to people.",Overgeneralization,en,Overgeneralization_0
+"I forgot her birthday, I forever mess up the things that matter to people.",Overgeneralization,en,Overgeneralization_0
+"My dad is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"The {event} was beautiful, but it break down for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+"I got a C on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I made one mistake in the assignment, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"I lost the game, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"She did not reply to my text in 10 minutes, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"There is a draft in the kitchen, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"The report will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I feel rejected right now, so I must be completely undesirable.",Emotional Reasoning,en,Emotional Reasoning_7
+"If this deal fails, my entire business is over and I will be over.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"The proposal will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I am feeling bored about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I did not finish all my cleaning, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"I felt a little anxious today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"My boss abandoned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I have not heard back from the test, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"My brother rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"This tablet broke, technology forever fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I made one mistake in the job, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+"She did not reply to my text in a day, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I scored 99% on the interview, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+"Either I figure this out right now, or I am completely useless.",Black & White Thinking,en,Black & White Thinking_9
+"I feel angry about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+I know I am going to bomb this exam no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+I need to always be the hardest working person in the room.,Should Statements,en,Should Statements_9
+"This phone broke, technology continually fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I need to have known better, I am so stupid.",Should Statements,en,Should Statements_7
+"I lost the race, I invariably lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made a blunder in the deal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I accomplished everything on my to-do list except one draft, so I am completely pointless.",Mental Filter,en,Mental Filter_9
+"She did not reply to my text in a week, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I accomplished everything on my to-do list except one dent, so I am completely unproductive.",Mental Filter,en,Mental Filter_9
+"I lost the race, I forever lose everything.",Overgeneralization,en,Overgeneralization_8
+"My boss scheduled a proposal, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel so stressed, this situation must be impossible to change.",Emotional Reasoning,en,Emotional Reasoning_1
+"I tripped on the sidewalk, I am invariably so incredibly foolish.",Overgeneralization,en,Overgeneralization_4
+I sent the wrong email and now my whole month is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I burned the burger, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+I either get the best review on this or I am a total failure.,Black & White Thinking,en,Black & White Thinking_1
+"I scored 95% on the interview, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+I should never make a error at work.,Should Statements,en,Should Statements_4
+"The assignment failed, it is completely because of my minor typo.",Personalization,en,Personalization_3
+I said the wrong thing and now my whole day is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"She did not reply to my text in a year, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"The {event} was beautiful, but it crash for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+"The world should be equal, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"It rained on our {event}, it is all my fault for scheduling it today.",Personalization,en,Personalization_1
+"I got rejected from this internship, I will hardly ever get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"The review had a dozen positive comments and one suggestion, but all I can think about is that one mistake.",Mental Filter,en,Mental Filter_0
+"She did not reply to my text in a week, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I feel hideous today, so everyone must think I am hideous.",Emotional Reasoning,en,Emotional Reasoning_4
+"I am feeling anxious about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"If this proposal fails, my entire job is over and I will be destroyed.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"The {event} was a success, but the scratch was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"I have to have known better, I am so foolish.",Should Statements,en,Should Statements_7
+"I did not finish all my laundry, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+I must never make a error at work.,Should Statements,en,Should Statements_4
+"The dog is sick, I must have done something wrong to cause it.",Personalization,en,Personalization_6
+"My partner ignored, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My partner got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The {event} was boring, I should have been more interesting.",Personalization,en,Personalization_5
+"Everyone complimented my code, but one person was quiet, so that person secretly hates it.",Mental Filter,en,Mental Filter_5
+"I accomplished everything on my to-do list except one dent, so I am completely useless.",Mental Filter,en,Mental Filter_9
+"If I am not the absolute best at painting, there is no point in even practicing.",Black & White Thinking,en,Black & White Thinking_6
+"I got a opportunity and a raise, but my boss did not help when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"My brother is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"The cat is sick, I must have done something wrong to cause it.",Personalization,en,Personalization_6
+"I made one mistake in the recipe, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"I am feeling angry about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I feel bored about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+My head felt numb for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I am feeling nervous about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I spilled coffee and now my whole month is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I am feeling bored about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"The world need to be just, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"My mom has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"If they do not love me completely, then they must left me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I have not heard back from the audition, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"There is a dent in the office, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"The world need to be perfect, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I must not feel upset about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"My dad criticized, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I am feeling sad about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"The hamster is sick, I must have done something wrong to cause it.",Personalization,en,Personalization_6
+"The dog is sick, I must have done something terrible to cause it.",Personalization,en,Personalization_6
+"The proposal will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"If I am not the absolute best at writing, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"My sister is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I have to always be productive or I am wasting my life.,Should Statements,en,Should Statements_1
+"I tripped on the sidewalk, I am continually so incredibly clumsy.",Overgeneralization,en,Overgeneralization_4
+"I got rejected from this job, I will almost never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"She did not reply to my text in a year, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I need to not feel upset about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"If this deal fails, my entire reputation is over and I will be finished.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+I said the wrong thing and now my whole evening is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I am feeling bored about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My friend has been quiet lately, it must be something I said.",Personalization,en,Personalization_0
+"My brother is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"The bike made a weird noise, it is definitely going to crash on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I feel jealous, so my partner must be doing something harmful.",Emotional Reasoning,en,Emotional Reasoning_8
+"I feel terrified of flying, so they must be inherently harmful.",Emotional Reasoning,en,Emotional Reasoning_2
+"I have to have known better, I am so ignorant.",Should Statements,en,Should Statements_7
+"If they do not smile at me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"He yelled at me, people are forever so cold to me.",Overgeneralization,en,Overgeneralization_6
+My leg felt cold for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+I must always be achieving or I am wasting my life.,Should Statements,en,Should Statements_1
+"I have not heard back from the audition, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel so stressed, this situation must be impossible to fix.",Emotional Reasoning,en,Emotional Reasoning_1
+"My boss scheduled a presentation, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+I arrived late and now my whole month is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I know I am going to bomb this audition no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"The {event} did not go perfectly, so I am convinced the rest of the 10 minutes will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+"People should to always be nice, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I made one mistake in the recipe, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"My brother is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I have not heard back from the meeting, they clearly declined me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I had a great day but I dropped my ring, so today was finished.",Mental Filter,en,Mental Filter_1
+"I did not win the game, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"I got a job and a raise, but my boss did not love when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I tripped on the sidewalk, I am continually so incredibly foolish.",Overgeneralization,en,Overgeneralization_4
+"My boss scheduled a presentation, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I am feeling sad about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"This TV broke, technology invariably fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I feel like a fake at work, so I must actually be bad at my promotion.",Emotional Reasoning,en,Emotional Reasoning_0
+"This phone broke, technology constantly fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"My boss scheduled a deal, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I scored 99% on the presentation, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"My cousin got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"It rained on our {event}, it is all my fault for organizing it today.",Personalization,en,Personalization_1
+"I must not feel bored about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I feel terrified of heights, so they must be inherently deadly.",Emotional Reasoning,en,Emotional Reasoning_2
+"I felt a little angry today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"I made a mistake in the task, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"The world have to be fair, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I feel so panicked, this situation must be impossible to solve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I accomplished everything on my to-do list except one crack, so I am completely pointless.",Mental Filter,en,Mental Filter_9
+"My boss is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"They got into an argument, it is my fault for pairing them.",Personalization,en,Personalization_9
+"My brother is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I feel dark about the future, so things will never get better.",Emotional Reasoning,en,Emotional Reasoning_6
+"I made a blunder in the meeting, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+My chest felt sore for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"My cousin is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"They are whispering over there, I know they are laughing at me.",Jumping to Conclusions,en,Jumping to Conclusions_5
+"If this meeting fails, my entire livelihood is over and I will be destroyed.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"I made one mistake in the job, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"I burned the donut, I am continually terrible at making food.",Overgeneralization,en,Overgeneralization_2
+"I accomplished everything on my to-do list except one dent, so I am completely wasted.",Mental Filter,en,Mental Filter_9
+"I made a slip-up in the code, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I am feeling lonely about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I have not heard back from the presentation, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+He need to know exactly how I feel without me having to tell him.,Should Statements,en,Should Statements_5
+"People must to always be polite, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"My boss scheduled a assignment, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+I either get 100% on this or I am a total disappointment.,Black & White Thinking,en,Black & White Thinking_1
+My back felt tingly for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I did not get the internship, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"I made a slip-up in the meeting, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My cousin got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The review had nine positive comments and one suggestion, but all I can think about is that one mistake.",Mental Filter,en,Mental Filter_0
+I should always be working or I am wasting my life.,Should Statements,en,Should Statements_1
+"The world must be fair, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"The {event} was a success, but the crack was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"I accomplished everything on my to-do list except one scratch, so I am completely pointless.",Mental Filter,en,Mental Filter_9
+"I had a great day but I dropped my watch, so today was over.",Mental Filter,en,Mental Filter_1
+"I lost my wallet, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+I know I am going to bomb this interview no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"If they do not love me completely, then they must abandoned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"People have to always be courteous, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I feel isolated right now, so I must be completely unlovable.",Emotional Reasoning,en,Emotional Reasoning_7
+"He yelled at me, people are continually so mean to me.",Overgeneralization,en,Overgeneralization_6
+I lost the document and now my whole day is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I got a promotion and a raise, but my boss did not support when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+My arm felt dizzy for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I got a position and a raise, but my boss did not smile at when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"My sister is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I got a job and a raise, but my boss did not support when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"She did not reply to my text in a week, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"The world have to be just, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"The world must be right, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"My brother frowned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My partner got passed over for a job, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I burned the donut, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"My colleague got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I burned the donut, I am forever terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"My partner is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My boss scheduled a presentation, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"People have to always be nice, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"The deal failed, it is completely because of my minor slip-up.",Personalization,en,Personalization_3
+"I should not feel bored about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"My mom has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"My friend got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"My team lost the game, it is entirely my fault for missing that one pass.",Personalization,en,Personalization_2
+"My partner broke up with me, I am seldom going to find love.",Overgeneralization,en,Overgeneralization_3
+"The scooter made a weird noise, it is definitely going to fail on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"This computer broke, technology forever fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I feel guilty, so I must have done something truly unforgivable.",Emotional Reasoning,en,Emotional Reasoning_3
+"I feel so panicked, this situation must be impossible to fix.",Emotional Reasoning,en,Emotional Reasoning_1
+"I did not win the election, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"My boss scheduled a project, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+I need to never make a error at work.,Should Statements,en,Should Statements_4
+"The {event} did not go perfectly, so I am convinced the rest of the a month will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+"I got a job and a raise, but my boss did not smile at when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I have to not feel frustrated about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I ought to not feel bored about this, I need to just get over it.",Should Statements,en,Should Statements_3
+I have to always be busy or I am wasting my life.,Should Statements,en,Should Statements_1
+"The task will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+I know I am going to bomb this meeting no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My partner did a dozen nice things for me, but forgot to cooking, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My mom got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I ought to not feel lonely about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I ought to not feel angry about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"My friend is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My boss scheduled a code, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"My brother got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I accomplished everything on my to-do list except one dent, so I am completely ruined.",Mental Filter,en,Mental Filter_9
+"My boss is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"I am feeling nervous about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I disagreed with my boss, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"I have not heard back from the presentation, they clearly dismissed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"She did not reply to my text in an hour, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I am feeling lonely about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"If they do not support me completely, then they must criticized me entirely.",Black & White Thinking,en,Black & White Thinking_2
+I need to never make a blunder at work.,Should Statements,en,Should Statements_4
+"I burned the candy bar, I am always terrible at making food.",Overgeneralization,en,Overgeneralization_2
+"I did not finish all my laundry, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+"I scored an A on the exam, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+I either get first place on this or I am a total loser.,Black & White Thinking,en,Black & White Thinking_1
+"I feel upset about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+I must always be the smartest person in the room.,Should Statements,en,Should Statements_9
+"The task failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"The meeting will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My mom is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"The train made a weird noise, it is definitely going to fail on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I feel pointless about the future, so things will never get better.",Emotional Reasoning,en,Emotional Reasoning_6
+"There is a crack in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I have not heard back from the interview, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel so overwhelmed, this situation must be impossible to improve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I made a slip-up in the report, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"They got into an argument, it is my fault for introducing them.",Personalization,en,Personalization_9
+"I failed this audition, I rarely succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"The report will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"It rained on our {event}, it is all my fault for planning it today.",Personalization,en,Personalization_1
+"This laptop broke, technology invariably fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I felt a little upset today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+I ought to always be achieving or I am wasting my life.,Should Statements,en,Should Statements_1
+"Everyone complimented my song, but one person was quiet, so that person secretly dislikes it.",Mental Filter,en,Mental Filter_5
+"I feel rejected right now, so I must be completely broken.",Emotional Reasoning,en,Emotional Reasoning_7
+"I made a slip-up in the proposal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I burned the slice of pizza, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"I missed the scooter, nothing always goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"My team lost the tournament, it is entirely my fault for missing that one shot.",Personalization,en,Personalization_2
+"I ought to not feel upset about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"Everyone complimented my code, but one person was quiet, so that person secretly avoids it.",Mental Filter,en,Mental Filter_5
+"My partner did nine nice things for me, but forgot to cooking, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My boss has been quiet lately, it must be something I said.",Personalization,en,Personalization_0
+"I should not feel anxious about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I burned the slice of pizza, I am invariably terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"I got rejected from this internship, I will never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+I need to always be achieving or I am wasting my life.,Should Statements,en,Should Statements_1
+"I should have known better, I am so slow.",Should Statements,en,Should Statements_7
+"The {event} was not flawless, so it was a total failure.",Black & White Thinking,en,Black & White Thinking_4
+"I am feeling nervous about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My boss scheduled a task, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"The world need to be fair, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"My brother has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"The world have to be equal, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+He must know exactly how I feel without me having to tell him.,Should Statements,en,Should Statements_5
+"I feel terrified of crowds, so they must be inherently deadly.",Emotional Reasoning,en,Emotional Reasoning_2
+"I scored an A on the meeting, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+"I feel jealous, so my partner must be doing something terrible.",Emotional Reasoning,en,Emotional Reasoning_8
+"I got a B on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I made a slip-up in the presentation, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My diet is ruined because I ate one burger, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"This computer broke, technology always fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"He looked at me funny, he definitely thinks I am an failure.",Jumping to Conclusions,en,Jumping to Conclusions_2
+"My partner did eight nice things for me, but forgot to vacuuming, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My cousin is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I must never make a typo at work.,Should Statements,en,Should Statements_4
+"My mom is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I scored an A on the audition, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+Today was busy but manageable. I got most of my vacuuming done and had a nice walk.,No Distortion,en,No Distortion_0
+"The {event} was beautiful, but it rain for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+"The code failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"I feel terrified of flying, so they must be inherently deadly.",Emotional Reasoning,en,Emotional Reasoning_2
+"My team lost the award, it is entirely my fault for missing that one play.",Personalization,en,Personalization_2
+Today was busy but manageable. I got most of my errands done and had a nice walk.,No Distortion,en,No Distortion_0
+"The train made a weird noise, it is definitely going to crash on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My cousin is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"If this assignment fails, my entire livelihood is over and I will be finished.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"I feel stupid in this class, so I must actually be the dumbest person here.",Emotional Reasoning,en,Emotional Reasoning_5
+"My colleague sighed, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"They are whispering over there, I know they are gossiping at me.",Jumping to Conclusions,en,Jumping to Conclusions_5
+"He yelled at me, people are continually so harsh to me.",Overgeneralization,en,Overgeneralization_6
+"My boss scheduled a task, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"If they do not praise me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My dad is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I said the wrong thing and now my whole week is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I tripped on the sidewalk, I am forever so incredibly clumsy.",Overgeneralization,en,Overgeneralization_4
+"I got rejected from this role, I will seldom get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I am feeling angry about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I made one mistake in the presentation, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"I scored 98% on the presentation, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"My sister has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"I feel terrified of flying, so they must be inherently unsafe.",Emotional Reasoning,en,Emotional Reasoning_2
+"I feel abandoned right now, so I must be completely worthless.",Emotional Reasoning,en,Emotional Reasoning_7
+I know I am going to bomb this interview no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I am feeling anxious about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I won the tournament, but I did not beat my personal best, so it was a evil performance.",Mental Filter,en,Mental Filter_6
+"I am tired today, so I am going to take it easy tonight.",No Distortion,en,No Distortion_8
+"I made a blunder in the task, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I tripped on the sidewalk, I am forever so incredibly foolish.",Overgeneralization,en,Overgeneralization_4
+"She canceled our {event}, she obviously dislikes spending time with me.",Jumping to Conclusions,en,Jumping to Conclusions_8
+"This tablet broke, technology constantly fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"My partner broke up with me, I am seldom going to find happiness.",Overgeneralization,en,Overgeneralization_3
+"I made a mistake in the meeting, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"Either I figure this out right now, or I am completely stupid.",Black & White Thinking,en,Black & White Thinking_9
+"The review had ten positive comments and one suggestion, but all I can think about is that one mistake.",Mental Filter,en,Mental Filter_0
+"I made one mistake in the project, so the whole thing was a complete embarrassment.",Black & White Thinking,en,Black & White Thinking_0
+"I made one mistake in the project, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"I got rejected from this role, I will rarely get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+I need to never make a typo at work.,Should Statements,en,Should Statements_4
+"I got a promotion and a raise, but my boss did not smile at when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"He yelled at me, people are invariably so cold to me.",Overgeneralization,en,Overgeneralization_6
+"The deal will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"People need to always be kind, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"If this deal fails, my entire reputation is over and I will be ruined.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"The presentation failed, it is completely because of my minor typo.",Personalization,en,Personalization_3
+"My boss is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I feel like a fraud at work, so I must actually be bad at my role.",Emotional Reasoning,en,Emotional Reasoning_0
+"I scored 98% on the exam, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"He yelled at me, people are continually so unfair to me.",Overgeneralization,en,Overgeneralization_6
+"My friend is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"I feel terrified of spiders, so they must be inherently dangerous.",Emotional Reasoning,en,Emotional Reasoning_2
+"He disagreed with me once, so he is completely disappointed in me.",Black & White Thinking,en,Black & White Thinking_7
+"My sister got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+I forgot my keys and now my whole life is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I know I am going to bomb this audition no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"Everyone complimented my essay, but one person was quiet, so that person secretly avoids it.",Mental Filter,en,Mental Filter_5
+"I scored 98% on the audition, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"My partner is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My sister is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My partner is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at writing, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"I am feeling angry about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"The meeting will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+I broke the glass and now my whole evening is a complete tragedy.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I scored 95% on the audition, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"My boss is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My team lost the match, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+"I got rejected from this promotion, I will seldom get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"He yelled at me, people are forever so cruel to me.",Overgeneralization,en,Overgeneralization_6
+"The review had twenty positive comments and one suggestion, but all I can think about is that one mistake.",Mental Filter,en,Mental Filter_0
+I should always be the hardest working person in the room.,Should Statements,en,Should Statements_9
+"They are whispering over there, I know they are staring at me.",Jumping to Conclusions,en,Jumping to Conclusions_5
+I arrived late and now my whole year is a complete tragedy.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I had a great day but I dropped my headphones, so today was finished.",Mental Filter,en,Mental Filter_1
+"The world need to be equal, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I had a great day but I dropped my laptop, so today was doomed.",Mental Filter,en,Mental Filter_1
+"I got a opportunity and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I got rejected from this internship, I will almost never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+I have to always be achieving or I am wasting my life.,Should Statements,en,Should Statements_1
+"If this report fails, my entire future is over and I will be finished.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+I should always be busy or I am wasting my life.,Should Statements,en,Should Statements_1
+"I feel abandoned right now, so I must be completely unlovable.",Emotional Reasoning,en,Emotional Reasoning_7
+"I missed the train, nothing at all goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"My boss scheduled a deal, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel ignorant in this class, so I must actually be the dumbest person here.",Emotional Reasoning,en,Emotional Reasoning_5
+"People need to always be courteous, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I did not finish all my vacuuming, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+"There is a draft in the office, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I am feeling nervous about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My boss scheduled a meeting, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"My boss scheduled a deal, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel terrified of spiders, so they must be inherently harmful.",Emotional Reasoning,en,Emotional Reasoning_2
+"I accomplished everything on my to-do list except one creak, so I am completely useless.",Mental Filter,en,Mental Filter_9
+I know I am going to bomb this exam no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I feel slow in this class, so I must actually be the dumbest person here.",Emotional Reasoning,en,Emotional Reasoning_5
+I must always be useful or I am wasting my life.,Should Statements,en,Should Statements_1
+"I made one mistake in the chore, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"The task will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I lost my glasses, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"I got a internship and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"This laptop broke, technology always fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"My partner broke up with me, I am never going to find love.",Overgeneralization,en,Overgeneralization_3
+"I feel like a imposter at work, so I must actually be bad at my promotion.",Emotional Reasoning,en,Emotional Reasoning_0
+"I got a opportunity and a raise, but my boss did not encourage when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I made one mistake in the assignment, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"The world have to be perfect, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I feel so trapped, this situation must be impossible to change.",Emotional Reasoning,en,Emotional Reasoning_1
+My stomach felt heavy for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I did not finish all my cleaning, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+"I had a great day but I dropped my phone, so today was over.",Mental Filter,en,Mental Filter_1
+"I have not heard back from the meeting, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"My partner is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"My brother is in a bad mood, I must have offended them.",Personalization,en,Personalization_4
+"People ought to always be kind, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I ought to always be busy or I am wasting my life.,Should Statements,en,Should Statements_1
+I must always be working or I am wasting my life.,Should Statements,en,Should Statements_1
+"The project will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I had a great day but I dropped my headphones, so today was destroyed.",Mental Filter,en,Mental Filter_1
+"If they do not support me completely, then they must sighed me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My partner did a dozen nice things for me, but forgot to vacuuming, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"There is a leak in the room, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I accomplished everything on my to-do list except one leak, so I am completely unproductive.",Mental Filter,en,Mental Filter_9
+"There is a dent in the room, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"My brother yelled, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I feel terrified of dogs, so they must be inherently dangerous.",Emotional Reasoning,en,Emotional Reasoning_2
+"My friend ignored, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The review had twenty positive comments and one suggestion, but all I can think about is that one error.",Mental Filter,en,Mental Filter_0
+"I feel terrified of spiders, so they must be inherently terrifying.",Emotional Reasoning,en,Emotional Reasoning_2
+"The world must be equal, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"My partner did twenty nice things for me, but forgot to errands, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"Everyone complimented my code, but one person was quiet, so that person secretly regrets it.",Mental Filter,en,Mental Filter_5
+"I won the tournament, but I did not beat my personal best, so it was a awful performance.",Mental Filter,en,Mental Filter_6
+"I am feeling sad about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My partner is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at painting, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+"I did not win the match, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"If they do not support me completely, then they must abandoned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I won the award, but I did not beat my personal best, so it was a awful performance.",Mental Filter,en,Mental Filter_6
+I have to always be useful or I am wasting my life.,Should Statements,en,Should Statements_1
+"The code will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I feel fat today, so everyone must think I am hideous.",Emotional Reasoning,en,Emotional Reasoning_4
+"She did not reply to my text in an hour, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I missed the scooter, nothing at all goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"There is a scratch in the office, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I have not heard back from the presentation, they clearly declined me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I am going to fail the interview, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+"I made a mistake in the deal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I am feeling frustrated about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I missed the bus, nothing in my life goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I made one mistake in the assignment, so the whole thing was a complete embarrassment.",Black & White Thinking,en,Black & White Thinking_0
+"The meeting will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I burned the fries, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"The hamster is sick, I must have done something careless to cause it.",Personalization,en,Personalization_6
+"My partner got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"My team lost the election, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+"The task will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+I know I am going to bomb this test no matter how much I study.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My dad is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"I have not heard back from the presentation, they clearly ignored me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"My friend has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"If they do not support me completely, then they must yelled me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I feel so overwhelmed, this situation must be impossible to solve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I am feeling lonely about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I failed this test, I hardly ever succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I made one mistake in the presentation, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+"I am feeling anxious about the interview, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My mom has been quiet lately, it must be something I said.",Personalization,en,Personalization_0
+"People have to always be kind, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I forgot my keys and now my whole week is a complete failure.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I must be over this {event} by now, there is something wrong with me.",Should Statements,en,Should Statements_0
+I either get an A+ on this or I am a total disappointment.,Black & White Thinking,en,Black & White Thinking_1
+I forgot my keys and now my whole evening is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The bike made a weird noise, it is definitely going to fail on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"She canceled our {event}, she obviously avoids spending time with me.",Jumping to Conclusions,en,Jumping to Conclusions_8
+"I feel forgotten right now, so I must be completely undesirable.",Emotional Reasoning,en,Emotional Reasoning_7
+"My mom is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I have to always be the most successful person in the room.,Should Statements,en,Should Statements_9
+"The deal failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"I tripped on the sidewalk, I am invariably so incredibly stupid.",Overgeneralization,en,Overgeneralization_4
+"My boss frowned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I feel dumb in this class, so I must actually be the dumbest person here.",Emotional Reasoning,en,Emotional Reasoning_5
+"Everyone complimented my design, but one person was quiet, so that person secretly dislikes it.",Mental Filter,en,Mental Filter_5
+"My colleague ignored, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I did not finish all my dishes, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"I am feeling frustrated about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My sister is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I feel so suffocated, this situation must be impossible to improve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I feel jealous, so my partner must be doing something careless.",Emotional Reasoning,en,Emotional Reasoning_8
+"I got a position and a raise, but my boss did not help when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I scored 98% on the meeting, but I am agonizing over the 2% I got wrong.",Mental Filter,en,Mental Filter_2
+"I feel nervous about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+I broke the glass and now my whole week is a complete failure.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I either get a perfect score on this or I am a total failure.,Black & White Thinking,en,Black & White Thinking_1
+"I should not feel frustrated about this, I need to just get over it.",Should Statements,en,Should Statements_3
+I need to never make a slip-up at work.,Should Statements,en,Should Statements_4
+"I got rejected from this promotion, I will almost never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"If I am not the absolute best at writing, there is no point in even attempting.",Black & White Thinking,en,Black & White Thinking_6
+"I disagreed with my brother, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"The deal failed, it is completely because of my minor typo.",Personalization,en,Personalization_3
+"I did not finish all my errands, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+I know I am going to bomb this presentation no matter how much I study.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My cousin is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My friend got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I have not heard back from the meeting, they clearly ignored me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel so overwhelmed, this situation must be impossible to change.",Emotional Reasoning,en,Emotional Reasoning_1
+"The {event} did not go perfectly, so I am convinced the rest of the a year will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+"I lost the match, I constantly lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made a mistake in the project, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"Everyone complimented my painting, but one person was quiet, so that person secretly regrets it.",Mental Filter,en,Mental Filter_5
+"The presentation failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"My boss scheduled a report, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"People should to always be courteous, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I am feeling angry about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I scored a 90 on the exam, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"I feel anxious about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+I spilled coffee and now my whole month is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The meeting failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"I got a internship and a raise, but my boss did not help when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I should have known better, I am so dumb.",Should Statements,en,Should Statements_7
+"My boss scheduled a presentation, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I did not finish all my errands, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"I lost the game, I invariably lose everything.",Overgeneralization,en,Overgeneralization_8
+He have to know exactly how I feel without me having to tell him.,Should Statements,en,Should Statements_5
+"My partner broke up with me, I am almost never going to find happiness.",Overgeneralization,en,Overgeneralization_3
+"The review had eight positive comments and one suggestion, but all I can think about is that one criticism.",Mental Filter,en,Mental Filter_0
+"People have to always be polite, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I ought to have known better, I am so slow.",Should Statements,en,Should Statements_7
+"My dad ignored, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My boss scheduled a proposal, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I failed this presentation, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"If they do not help me completely, then they must left me entirely.",Black & White Thinking,en,Black & White Thinking_2
+My shoulder felt dizzy for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"My mom is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I lost my ring, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"My team lost the match, it is entirely my fault for missing that one move.",Personalization,en,Personalization_2
+"The project failed, it is completely because of my minor slip-up.",Personalization,en,Personalization_3
+"I lost the race, I constantly lose everything.",Overgeneralization,en,Overgeneralization_8
+"If they do not encourage me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"If they do not support me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"The hamster is sick, I must have done something terrible to cause it.",Personalization,en,Personalization_6
+"My partner did ten nice things for me, but forgot to dishes, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"I feel lonely right now, so I must be completely unwanted.",Emotional Reasoning,en,Emotional Reasoning_7
+"My mom frowned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The task failed, it is completely because of my minor typo.",Personalization,en,Personalization_3
+"He looked at me funny, he definitely thinks I am an fool.",Jumping to Conclusions,en,Jumping to Conclusions_2
+I know this {event} is going to be terrible before it even starts.,Jumping to Conclusions,en,Jumping to Conclusions_3
+"I need to not feel lonely about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The {event} did not go perfectly, so I am convinced the rest of the a week will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+"The plane made a weird noise, it is definitely going to break down on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+My stomach felt tingly for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"My boss is in a bad mood, I must have offended them.",Personalization,en,Personalization_4
+"I feel guilty, so I must have done something truly horrible.",Emotional Reasoning,en,Emotional Reasoning_3
+"The {event} was not flawless, so it was a total mess.",Black & White Thinking,en,Black & White Thinking_4
+"I made a error in the report, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I feel lonely right now, so I must be completely undesirable.",Emotional Reasoning,en,Emotional Reasoning_7
+"I scored 95% on the presentation, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"I need to not feel nervous about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"My team lost the contest, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+"I burned the bag of chips, I am always terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"I burned the cookie, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"My dad got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"If they do not help me completely, then they must sighed me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My boss scheduled a meeting, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I had a great day but I dropped my headphones, so today was over.",Mental Filter,en,Mental Filter_1
+"I made one mistake in the assignment, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+"I failed this audition, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I made a error in the meeting, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My sister is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"I made one mistake in the chore, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+"I lost the election, I constantly lose everything.",Overgeneralization,en,Overgeneralization_8
+"The review had ten positive comments and one suggestion, but all I can think about is that one negative comment.",Mental Filter,en,Mental Filter_0
+"My friend got passed over for a job, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The project will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I burned the donut, I am constantly terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"My mom is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"My sister is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I either get a perfect score on this or I am a total loser.,Black & White Thinking,en,Black & White Thinking_1
+"I made one mistake in the project, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"The {event} was boring, I should have been more engaging.",Personalization,en,Personalization_5
+I need to always be the smartest person in the room.,Should Statements,en,Should Statements_9
+"I feel frustrated about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+"My boss is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"I have not heard back from the exam, they clearly ignored me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"If they do not encourage me completely, then they must abandoned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My dad is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"I lost my keys, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"I did not finish all my dishes, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"I burned the cookie, I am forever terrible at preparing dinner.",Overgeneralization,en,Overgeneralization_2
+I know I am going to bomb this test no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"She did not reply to my text in a year, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I missed the scooter, nothing ever goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"The project will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I made a typo in the meeting, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I lost the election, I forever lose everything.",Overgeneralization,en,Overgeneralization_8
+"My friend has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+"I burned the candy bar, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"They are whispering over there, I know they are judging at me.",Jumping to Conclusions,en,Jumping to Conclusions_5
+"I lost the award, I invariably lose everything.",Overgeneralization,en,Overgeneralization_8
+"I am feeling upset about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I either get a perfect score on this or I am a total fool.,Black & White Thinking,en,Black & White Thinking_1
+I either get first place on this or I am a total fool.,Black & White Thinking,en,Black & White Thinking_1
+"People ought to always be courteous, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"My partner has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"The {event} was boring, I should have been more lively.",Personalization,en,Personalization_5
+"I had a great day but I dropped my watch, so today was doomed.",Mental Filter,en,Mental Filter_1
+"I have not heard back from the interview, they clearly declined me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel terrified of spiders, so they must be inherently unsafe.",Emotional Reasoning,en,Emotional Reasoning_2
+"If this project fails, my entire business is over and I will be finished.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If I am not the absolute best at sports, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"I feel isolated right now, so I must be completely broken.",Emotional Reasoning,en,Emotional Reasoning_7
+"The world have to be right, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I am feeling bored about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I missed the scooter, nothing for me goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"The {event} was not flawless, so it was a total catastrophe.",Black & White Thinking,en,Black & White Thinking_4
+"My partner is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I felt a little frustrated today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"I feel like a imposter at work, so I must actually be bad at my internship.",Emotional Reasoning,en,Emotional Reasoning_0
+I need to always be productive or I am wasting my life.,Should Statements,en,Should Statements_1
+"I feel terrified of dogs, so they must be inherently unsafe.",Emotional Reasoning,en,Emotional Reasoning_2
+"My friend is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I did not finish all my cleaning, so today was completely wasted.",Black & White Thinking,en,Black & White Thinking_5
+"The assignment will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I won the game, but I did not beat my personal best, so it was a awful performance.",Mental Filter,en,Mental Filter_6
+"My boss scheduled a code, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I tripped on the sidewalk, I am constantly so incredibly uncoordinated.",Overgeneralization,en,Overgeneralization_4
+"I accomplished everything on my to-do list except one stain, so I am completely pointless.",Mental Filter,en,Mental Filter_9
+"My team lost the race, it is entirely my fault for missing that one pass.",Personalization,en,Personalization_2
+"My team lost the race, it is entirely my fault for missing that one play.",Personalization,en,Personalization_2
+"I lost the match, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"The plane made a weird noise, it is definitely going to catch fire on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I burned the burger, I am always terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"I had a great day but I dropped my phone, so today was doomed.",Mental Filter,en,Mental Filter_1
+"There is a crack in the building, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I did not finish all my dishes, so today was completely wasted.",Black & White Thinking,en,Black & White Thinking_5
+"My brother has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"I got rejected from this role, I will never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I feel so suffocated, this situation must be impossible to solve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I scored 99% on the audition, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"I won the game, but I did not beat my personal best, so it was a unforgivable performance.",Mental Filter,en,Mental Filter_6
+"They got into an argument, it is my fault for connecting them.",Personalization,en,Personalization_9
+"My sister got passed over for a job, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I have not heard back from the exam, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"If they do not help me completely, then they must yelled me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My sister rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I accomplished everything on my to-do list except one leak, so I am completely pointless.",Mental Filter,en,Mental Filter_9
+"I had a great day but I dropped my wallet, so today was finished.",Mental Filter,en,Mental Filter_1
+"I burned the bag of chips, I am invariably terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"He yelled at me, people are continually so cold to me.",Overgeneralization,en,Overgeneralization_6
+"I failed this audition, I seldom succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I feel terrified of dogs, so they must be inherently harmful.",Emotional Reasoning,en,Emotional Reasoning_2
+"I burned the slice of pizza, I am constantly terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"My mom is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"The review had a dozen positive comments and one suggestion, but all I can think about is that one criticism.",Mental Filter,en,Mental Filter_0
+"If I am not the absolute best at coding, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+"I feel terrified of crowds, so they must be inherently harmful.",Emotional Reasoning,en,Emotional Reasoning_2
+My arm felt tight for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I burned the slice of pizza, I am continually terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"I made one mistake in the chore, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"I burned the bag of chips, I am invariably terrible at preparing dinner.",Overgeneralization,en,Overgeneralization_2
+"I did not finish all my laundry, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"I won the election, but I did not beat my personal best, so it was a awful performance.",Mental Filter,en,Mental Filter_6
+"I did not finish all my laundry, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"I scored a 90 on the test, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+My stomach felt weird for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"My friend left, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I scored 99% on the exam, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"My sister is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My diet is ruined because I ate one fries, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"I won the race, but I did not beat my personal best, so it was a unforgivable performance.",Mental Filter,en,Mental Filter_6
+"I missed the car, nothing in my life goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I did not finish all my cooking, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"I accomplished everything on my to-do list except one stain, so I am completely useless.",Mental Filter,en,Mental Filter_9
+"People must to always be kind, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I did not finish all my vacuuming, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"My partner broke up with me, I am rarely going to find love.",Overgeneralization,en,Overgeneralization_3
+"I made a blunder in the proposal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"The plane made a weird noise, it is definitely going to fail on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I feel like a fake at work, so I must actually be bad at my internship.",Emotional Reasoning,en,Emotional Reasoning_0
+"People need to always be nice, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I know I am going to bomb this interview no matter how much I practice.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"The cat is sick, I must have done something careless to cause it.",Personalization,en,Personalization_6
+"People ought to always be polite, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I need to always be the best person in the room.,Should Statements,en,Should Statements_9
+"The plane made a weird noise, it is definitely going to rain on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My friend is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"She did not reply to my text in a week, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I did not finish all my vacuuming, so today was completely wasted.",Black & White Thinking,en,Black & White Thinking_5
+My arm felt painful for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"There is a scratch in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+I should always be the most successful person in the room.,Should Statements,en,Should Statements_9
+"I am feeling frustrated about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I feel abandoned right now, so I must be completely undesirable.",Emotional Reasoning,en,Emotional Reasoning_7
+"My boss is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I ought to always be useful or I am wasting my life.,Should Statements,en,Should Statements_1
+"My partner did twenty nice things for me, but forgot to cooking, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My dad got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"My boss scheduled a deal, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel like a liar at work, so I must actually be bad at my position.",Emotional Reasoning,en,Emotional Reasoning_0
+"I feel foolish in this class, so I must actually be the dumbest person here.",Emotional Reasoning,en,Emotional Reasoning_5
+"Everyone complimented my meal, but one person was quiet, so that person secretly regrets it.",Mental Filter,en,Mental Filter_5
+"I got a job and a raise, but my boss did not help when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I must have known better, I am so slow.",Should Statements,en,Should Statements_7
+"I need to have known better, I am so dumb.",Should Statements,en,Should Statements_7
+"I won the tournament, but I did not beat my personal best, so it was a terrible performance.",Mental Filter,en,Mental Filter_6
+"I made one mistake in the presentation, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"I feel so overwhelmed, this situation must be impossible to fix.",Emotional Reasoning,en,Emotional Reasoning_1
+"I tripped on the sidewalk, I am forever so incredibly stupid.",Overgeneralization,en,Overgeneralization_4
+"I need to be over this {event} by now, there is something wrong with me.",Should Statements,en,Should Statements_0
+I know I am going to bomb this test no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My colleague is lonely, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at writing, there is no point in even practicing.",Black & White Thinking,en,Black & White Thinking_6
+"I must not feel frustrated about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The dog is sick, I must have done something bad to cause it.",Personalization,en,Personalization_6
+"My cousin is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+I either get a perfect score on this or I am a total disappointment.,Black & White Thinking,en,Black & White Thinking_1
+"If they do not smile at me completely, then they must criticized me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My boss scheduled a project, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"The deal will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"If this assignment fails, my entire job is over and I will be over.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"I feel like a imposter at work, so I must actually be bad at my role.",Emotional Reasoning,en,Emotional Reasoning_0
+"She did not reply to my text in a month, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"The cat is sick, I must have done something terrible to cause it.",Personalization,en,Personalization_6
+"My dad is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I should never make a typo at work.,Should Statements,en,Should Statements_4
+"I did not get the job, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"I failed this exam, I hardly ever succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I need to not feel anxious about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The assignment failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"She did not reply to my text in 10 minutes, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"Everyone complimented my design, but one person was quiet, so that person secretly dreads it.",Mental Filter,en,Mental Filter_5
+"I lost the race, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made a slip-up in the deal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I have not heard back from the meeting, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I won the race, but I did not beat my personal best, so it was a evil performance.",Mental Filter,en,Mental Filter_6
+"My partner got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I made one mistake in the recipe, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+I have to meditate every single day or I am a failure.,Should Statements,en,Should Statements_6
+"I felt a little lonely today, I am definitely descending into a permanent breakdown.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_8
+"My diet is ruined because I ate one candy bar, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"I feel so trapped, this situation must be impossible to fix.",Emotional Reasoning,en,Emotional Reasoning_1
+"My mom has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"My dad has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"I missed the car, nothing ever goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"The review had nine positive comments and one suggestion, but all I can think about is that one error.",Mental Filter,en,Mental Filter_0
+"I feel so overwhelmed, this situation must be impossible to escape.",Emotional Reasoning,en,Emotional Reasoning_1
+"My team lost the race, it is entirely my fault for missing that one shot.",Personalization,en,Personalization_2
+"My boss got passed over for a position, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I feel hopeless about the future, so things will never get better.",Emotional Reasoning,en,Emotional Reasoning_6
+"The deal failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"I burned the bag of chips, so I will just order pizza instead.",No Distortion,en,No Distortion_7
+"I am going to fail the meeting, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+"My sister sighed, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The bird is sick, I must have done something careless to cause it.",Personalization,en,Personalization_6
+"I did not win the award, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+I either get first place on this or I am a total disappointment.,Black & White Thinking,en,Black & White Thinking_1
+"This laptop broke, technology continually fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"They got into an argument, it is my fault for inviting them.",Personalization,en,Personalization_9
+"He looked at me funny, he definitely thinks I am an idiot.",Jumping to Conclusions,en,Jumping to Conclusions_2
+"I won the game, but I did not beat my personal best, so it was a evil performance.",Mental Filter,en,Mental Filter_6
+"The deal will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I won the tournament, but I did not beat my personal best, so it was a horrible performance.",Mental Filter,en,Mental Filter_6
+"My partner did a dozen nice things for me, but forgot to laundry, so they do not care at all.",Mental Filter,en,Mental Filter_7
+I know I am going to bomb this audition no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I am feeling sad about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My cousin has been quiet lately, it must be something I said.",Personalization,en,Personalization_0
+"I missed the bus, nothing for me goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"She did not reply to my text in a week, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I feel like a phony at work, so I must actually be bad at my position.",Emotional Reasoning,en,Emotional Reasoning_0
+"I have not heard back from the audition, they clearly dismissed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"The code will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My brother criticized, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The {event} was beautiful, but it explode for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+"I failed this presentation, I rarely succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I accomplished everything on my to-do list except one scratch, so I am completely wasted.",Mental Filter,en,Mental Filter_9
+"My partner broke up with me, I am never going to find happiness.",Overgeneralization,en,Overgeneralization_3
+"The {event} was not flawless, so it was a total disaster.",Black & White Thinking,en,Black & White Thinking_4
+"The report failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"It rained on our {event}, it is all my fault for choosing it today.",Personalization,en,Personalization_1
+"My colleague is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I have to never make a mistake at work.,Should Statements,en,Should Statements_4
+"The review had eight positive comments and one suggestion, but all I can think about is that one flaw.",Mental Filter,en,Mental Filter_0
+"The review had eight positive comments and one suggestion, but all I can think about is that one error.",Mental Filter,en,Mental Filter_0
+"I am going to fail the test, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+"My diet is ruined because I ate one bag of chips, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"I disagreed with my dad, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"I feel forgotten right now, so I must be completely unlovable.",Emotional Reasoning,en,Emotional Reasoning_7
+"I feel so trapped, this situation must be impossible to solve.",Emotional Reasoning,en,Emotional Reasoning_1
+I either get the best review on this or I am a total loser.,Black & White Thinking,en,Black & White Thinking_1
+"This TV broke, technology continually fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+I arrived late and now my whole life is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I feel terrified of spiders, so they must be inherently deadly.",Emotional Reasoning,en,Emotional Reasoning_2
+"The fish is sick, I must have done something wrong to cause it.",Personalization,en,Personalization_6
+"I am feeling anxious about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I lost the game, I always lose everything.",Overgeneralization,en,Overgeneralization_8
+I must always be busy or I am wasting my life.,Should Statements,en,Should Statements_1
+"I should have known better, I am so stupid.",Should Statements,en,Should Statements_7
+"The project failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"I had a great day but I dropped my glasses, so today was over.",Mental Filter,en,Mental Filter_1
+"I have not heard back from the interview, they clearly ignored me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I tripped on the sidewalk, I am always so incredibly awkward.",Overgeneralization,en,Overgeneralization_4
+"The world ought to be perfect, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I should have known better, I am so foolish.",Should Statements,en,Should Statements_7
+"My boss yelled, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My partner broke up with me, I am rarely going to find joy.",Overgeneralization,en,Overgeneralization_3
+"My boss scheduled a task, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"My boss scheduled a proposal, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel like a imposter at work, so I must actually be bad at my job.",Emotional Reasoning,en,Emotional Reasoning_0
+"I got a role and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"If I am not the absolute best at math, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+"I missed the train, nothing for me goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I got a internship and a raise, but my boss did not encourage when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"The {event} was not flawless, so it was a total tragedy.",Black & White Thinking,en,Black & White Thinking_4
+I ought to always be the best person in the room.,Should Statements,en,Should Statements_9
+Today was busy but manageable. I got most of my laundry done and had a nice walk.,No Distortion,en,No Distortion_0
+"I have not heard back from the audition, they clearly declined me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"My cousin is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My partner is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"The project failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+"My partner has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+"I feel like a fraud at work, so I must actually be bad at my internship.",Emotional Reasoning,en,Emotional Reasoning_0
+"My boss scheduled a task, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+I have to work every single day or I am a failure.,Should Statements,en,Should Statements_6
+I said the wrong thing and now my whole month is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I missed the car, nothing always goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"My boss has been quiet lately, it must be something I messed up.",Personalization,en,Personalization_0
+"I failed this test, I rarely succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I feel like a fraud at work, so I must actually be bad at my promotion.",Emotional Reasoning,en,Emotional Reasoning_0
+"I scored 98% on the meeting, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"My boss is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"I ought to have known better, I am so foolish.",Should Statements,en,Should Statements_7
+"If they do not smile at me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My partner broke up with me, I am rarely going to find happiness.",Overgeneralization,en,Overgeneralization_3
+"If they do not praise me completely, then they must criticized me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My brother is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"She did not reply to my text in a day, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I feel terrified of heights, so they must be inherently terrifying.",Emotional Reasoning,en,Emotional Reasoning_2
+"There is a leak in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+I should always be the smartest person in the room.,Should Statements,en,Should Statements_9
+"I failed this meeting, I rarely succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I feel jealous, so my partner must be doing something bad.",Emotional Reasoning,en,Emotional Reasoning_8
+"There is a leak in the building, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+I either get first place on this or I am a total failure.,Black & White Thinking,en,Black & White Thinking_1
+Today was busy but manageable. I got most of my cooking done and had a nice walk.,No Distortion,en,No Distortion_0
+"The car made a weird noise, it is definitely going to crash on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My boss scheduled a project, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"The fish is sick, I must have done something careless to cause it.",Personalization,en,Personalization_6
+I need to always be the fastest person in the room.,Should Statements,en,Should Statements_9
+"The review had ten positive comments and one suggestion, but all I can think about is that one criticism.",Mental Filter,en,Mental Filter_0
+"If I am not the absolute best at writing, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+I either get a perfect score on this or I am a total idiot.,Black & White Thinking,en,Black & White Thinking_1
+"I did not get the role, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"I did not finish all my errands, so today was completely unproductive.",Black & White Thinking,en,Black & White Thinking_5
+"My team lost the election, it is entirely my fault for missing that one pass.",Personalization,en,Personalization_2
+"I had a great day but I dropped my keys, so today was finished.",Mental Filter,en,Mental Filter_1
+I either get an A+ on this or I am a total loser.,Black & White Thinking,en,Black & White Thinking_1
+"I did not finish all my laundry, so today was completely wasted.",Black & White Thinking,en,Black & White Thinking_5
+"My team lost the award, it is entirely my fault for missing that one pass.",Personalization,en,Personalization_2
+"I am feeling sad about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"The meeting failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+"She canceled our {event}, she obviously regrets spending time with me.",Jumping to Conclusions,en,Jumping to Conclusions_8
+"The {event} did not go perfectly, so I am convinced the rest of the a day will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+My leg felt sore for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"There is a stain in the building, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I am feeling frustrated about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My friend is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"I lost my laptop, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"I made a typo in the deal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+I spilled coffee and now my whole life is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I feel like a fake at work, so I must actually be bad at my job.",Emotional Reasoning,en,Emotional Reasoning_0
+"My partner is in a bad mood, I must have offended them.",Personalization,en,Personalization_4
+"My mom is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"My friend is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I made one mistake in the job, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"My cousin has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"She canceled our {event}, she obviously hates spending time with me.",Jumping to Conclusions,en,Jumping to Conclusions_8
+"I did not finish all my cooking, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"I disagreed with my colleague, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"He disagreed with me once, so he is completely hating me.",Black & White Thinking,en,Black & White Thinking_7
+"People must to always be courteous, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"My partner did nine nice things for me, but forgot to errands, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My mom left, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I got rejected from this opportunity, I will seldom get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"My boss is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+I have to always be the hardest working person in the room.,Should Statements,en,Should Statements_9
+I should always be the fastest person in the room.,Should Statements,en,Should Statements_9
+I lost the document and now my whole year is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I ought to always be working or I am wasting my life.,Should Statements,en,Should Statements_1
+"I feel so suffocated, this situation must be impossible to change.",Emotional Reasoning,en,Emotional Reasoning_1
+"The world need to be right, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"The world should be perfect, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+I ought to always be the fastest person in the room.,Should Statements,en,Should Statements_9
+"My boss got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The world must be perfect, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I feel like a phony at work, so I must actually be bad at my role.",Emotional Reasoning,en,Emotional Reasoning_0
+I should always be productive or I am wasting my life.,Should Statements,en,Should Statements_1
+"The economy is bad, I somehow feel responsible for not doing enough.",Personalization,en,Personalization_8
+"My colleague is in a bad mood, I must have bothered them.",Personalization,en,Personalization_4
+"Everyone complimented my painting, but one person was quiet, so that person secretly avoids it.",Mental Filter,en,Mental Filter_5
+"If I am not the absolute best at music, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"I accomplished everything on my to-do list except one scratch, so I am completely useless.",Mental Filter,en,Mental Filter_9
+"My dad is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"My boss has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"I lost the election, I invariably lose everything.",Overgeneralization,en,Overgeneralization_8
+I forgot my keys and now my whole year is a complete failure.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I failed this interview, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+I have to always be the smartest person in the room.,Should Statements,en,Should Statements_9
+"The world ought to be equal, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"My mom ignored, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"He yelled at me, people are forever so harsh to me.",Overgeneralization,en,Overgeneralization_6
+"My dad yelled, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My team lost the race, it is entirely my fault for missing that one move.",Personalization,en,Personalization_2
+"I feel lonely right now, so I must be completely worthless.",Emotional Reasoning,en,Emotional Reasoning_7
+"I got rejected from this job, I will never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I must not feel angry about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The review had ten positive comments and one suggestion, but all I can think about is that one error.",Mental Filter,en,Mental Filter_0
+"My cousin got passed over for a role, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"My cousin got passed over for a job, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"Everyone complimented my design, but one person was quiet, so that person secretly regrets it.",Mental Filter,en,Mental Filter_5
+"My partner broke up with me, I am almost never going to find a relationship.",Overgeneralization,en,Overgeneralization_3
+"I have not heard back from the exam, they clearly dismissed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel like a imposter at work, so I must actually be bad at my position.",Emotional Reasoning,en,Emotional Reasoning_0
+"People must to always be respectful, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I either get an A+ on this or I am a total fool.,Black & White Thinking,en,Black & White Thinking_1
+"I need to have known better, I am so foolish.",Should Statements,en,Should Statements_7
+"The task failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"My boss scheduled a meeting, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I scored 95% on the exam, but I am agonizing over the 2% I got wrong.",Mental Filter,en,Mental Filter_2
+"If I am not the absolute best at sports, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+"I had a great day but I dropped my ring, so today was destroyed.",Mental Filter,en,Mental Filter_1
+"My friend is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My team lost the award, it is entirely my fault for missing that one shot.",Personalization,en,Personalization_2
+"If they do not love me completely, then they must yelled me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I scored 99% on the test, but I am agonizing over the the one question I got wrong.",Mental Filter,en,Mental Filter_2
+I sent the wrong email and now my whole life is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"Everyone complimented my essay, but one person was quiet, so that person secretly dislikes it.",Mental Filter,en,Mental Filter_5
+"I must have known better, I am so foolish.",Should Statements,en,Should Statements_7
+"I made a typo in the project, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My partner did nine nice things for me, but forgot to laundry, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"I feel terrified of flying, so they must be inherently dangerous.",Emotional Reasoning,en,Emotional Reasoning_2
+"This printer broke, technology invariably fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+I must always be the most successful person in the room.,Should Statements,en,Should Statements_9
+"The bus made a weird noise, it is definitely going to rain on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My mom is in a bad mood, I must have angered them.",Personalization,en,Personalization_4
+"I won the contest, but I did not beat my personal best, so it was a awful performance.",Mental Filter,en,Mental Filter_6
+"My boss scheduled a code, they are definitely going to fire me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"My team lost the game, it is entirely my fault for missing that one move.",Personalization,en,Personalization_2
+"If this deal fails, my entire future is over and I will be destroyed.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"I got a promotion and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"My mom is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I feel terrified of heights, so they must be inherently harmful.",Emotional Reasoning,en,Emotional Reasoning_2
+"I feel terrified of crowds, so they must be inherently terrifying.",Emotional Reasoning,en,Emotional Reasoning_2
+He should know exactly how I feel without me having to tell him.,Should Statements,en,Should Statements_5
+"My friend got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The bike made a weird noise, it is definitely going to rain on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I feel like a liar at work, so I must actually be bad at my internship.",Emotional Reasoning,en,Emotional Reasoning_0
+"I burned the candy bar, I am always terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"People have to always be respectful, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I ought to always be the most successful person in the room.,Should Statements,en,Should Statements_9
+"The {event} was not flawless, so it was a total nightmare.",Black & White Thinking,en,Black & White Thinking_4
+"My boss is in a bad mood, I must have angered them.",Personalization,en,Personalization_4
+"My partner did ten nice things for me, but forgot to laundry, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My partner got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+I ought to always be the hardest working person in the room.,Should Statements,en,Should Statements_9
+"I feel lonely about the {event}, but I know time will heal the wound.",No Distortion,en,No Distortion_2
+"The bus made a weird noise, it is definitely going to break down on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I did not finish all my cleaning, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+"I am feeling nervous about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"If this task fails, my entire reputation is over and I will be finished.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If they do not praise me completely, then they must abandoned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+I ought to always be the smartest person in the room.,Should Statements,en,Should Statements_9
+"I got a job and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"My team lost the game, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+I have to always be working or I am wasting my life.,Should Statements,en,Should Statements_1
+"My colleague got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"My diet is ruined because I ate one cookie, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"The {event} was boring, I should have been more entertaining.",Personalization,en,Personalization_5
+"I accomplished everything on my to-do list except one scratch, so I am completely unproductive.",Mental Filter,en,Mental Filter_9
+"The car made a weird noise, it is definitely going to fail on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My partner is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"The review had eight positive comments and one suggestion, but all I can think about is that one negative comment.",Mental Filter,en,Mental Filter_0
+"They are whispering over there, I know they are mocking at me.",Jumping to Conclusions,en,Jumping to Conclusions_5
+"I failed this audition, I never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"The review had a dozen positive comments and one suggestion, but all I can think about is that one flaw.",Mental Filter,en,Mental Filter_0
+"My friend has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"I missed the bike, nothing for me goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"If they do not praise me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+I know I am going to bomb this presentation no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+I must never make a blunder at work.,Should Statements,en,Should Statements_4
+I lost the document and now my whole year is a complete failure.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I ought to always be productive or I am wasting my life.,Should Statements,en,Should Statements_1
+"The bike made a weird noise, it is definitely going to catch fire on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"I feel like a liar at work, so I must actually be bad at my role.",Emotional Reasoning,en,Emotional Reasoning_0
+"I made one mistake in the project, so the whole thing was a complete failure.",Black & White Thinking,en,Black & White Thinking_0
+"I burned the slice of pizza, I am forever terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"I should be over this {event} by now, there is something wrong with me.",Should Statements,en,Should Statements_0
+"I feel unattractive today, so everyone must think I am hideous.",Emotional Reasoning,en,Emotional Reasoning_4
+"I got a D on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I made one mistake in the job, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"I must have known better, I am so stupid.",Should Statements,en,Should Statements_7
+"My sister is anxious, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My colleague frowned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I am going to fail the audition, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+"The presentation will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"The review had ten positive comments and one suggestion, but all I can think about is that one flaw.",Mental Filter,en,Mental Filter_0
+"Everyone complimented my song, but one person was quiet, so that person secretly avoids it.",Mental Filter,en,Mental Filter_5
+"I made one mistake in the recipe, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"I have to have known better, I am so dumb.",Should Statements,en,Should Statements_7
+"If they do not support me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My boss scheduled a code, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"The code will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+I ought to never make a typo at work.,Should Statements,en,Should Statements_4
+"I made one mistake in the assignment, so the whole thing was a complete disappointment.",Black & White Thinking,en,Black & White Thinking_0
+"I have not heard back from the presentation, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I got a 85% on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I am feeling frustrated about the test, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I either get first place on this or I am a total idiot.,Black & White Thinking,en,Black & White Thinking_1
+"This computer broke, technology invariably fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"My brother sighed, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I got rejected from this opportunity, I will almost never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I am feeling angry about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I made a typo in the assignment, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I had a great day but I dropped my phone, so today was ruined.",Mental Filter,en,Mental Filter_1
+"He yelled at me, people are always so harsh to me.",Overgeneralization,en,Overgeneralization_6
+"I am feeling angry about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I need to never make a mistake at work.,Should Statements,en,Should Statements_4
+"I feel like a phony at work, so I must actually be bad at my opportunity.",Emotional Reasoning,en,Emotional Reasoning_0
+I must always be productive or I am wasting my life.,Should Statements,en,Should Statements_1
+I sent the wrong email and now my whole day is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+I must never make a slip-up at work.,Should Statements,en,Should Statements_4
+"I need to not feel frustrated about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"My team lost the match, it is entirely my fault for missing that one play.",Personalization,en,Personalization_2
+"I ought to have known better, I am so ignorant.",Should Statements,en,Should Statements_7
+"There is a dent in the building, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I scored a 90 on the test, but I am agonizing over the 5% I got wrong.",Mental Filter,en,Mental Filter_2
+"If I am not the absolute best at sports, there is no point in even attempting.",Black & White Thinking,en,Black & White Thinking_6
+"I am feeling frustrated about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I have not heard back from the test, they clearly ignored me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I did not finish all my cooking, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+"I made a error in the project, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I ought to not feel nervous about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I feel terrified of crowds, so they must be inherently dangerous.",Emotional Reasoning,en,Emotional Reasoning_2
+"I am going to fail the presentation, I just know it.",Jumping to Conclusions,en,Jumping to Conclusions_6
+I should always be the best person in the room.,Should Statements,en,Should Statements_9
+"I got a opportunity and a raise, but my boss did not smile at when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"The deal will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I have to not feel anxious about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I feel like a fraud at work, so I must actually be bad at my job.",Emotional Reasoning,en,Emotional Reasoning_0
+"My partner broke up with me, I am never going to find joy.",Overgeneralization,en,Overgeneralization_3
+"I feel guilty, so I must have done something truly awful.",Emotional Reasoning,en,Emotional Reasoning_3
+"I feel like a liar at work, so I must actually be bad at my promotion.",Emotional Reasoning,en,Emotional Reasoning_0
+"The plane made a weird noise, it is definitely going to explode on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"He yelled at me, people are forever so mean to me.",Overgeneralization,en,Overgeneralization_6
+"I won the tournament, but I did not beat my personal best, so it was a unforgivable performance.",Mental Filter,en,Mental Filter_6
+"My brother is bored, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"The world ought to be right, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I had a great day but I dropped my keys, so today was over.",Mental Filter,en,Mental Filter_1
+I forgot my keys and now my whole week is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The assignment will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"My friend rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"She did not reply to my text in a year, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I should have known better, I am so ignorant.",Should Statements,en,Should Statements_7
+"My partner broke up with me, I am seldom going to find joy.",Overgeneralization,en,Overgeneralization_3
+"He disagreed with me once, so he is completely mad at me.",Black & White Thinking,en,Black & White Thinking_7
+"My sister is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+"I failed this presentation, I never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"She did not reply to my text in a month, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I did not finish all my dishes, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+My head felt tight for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"He yelled at me, people are always so mean to me.",Overgeneralization,en,Overgeneralization_6
+"I must have known better, I am so ignorant.",Should Statements,en,Should Statements_7
+"She did not reply to my text in a month, she must think I am stupid now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I feel terrified of flying, so they must be inherently terrifying.",Emotional Reasoning,en,Emotional Reasoning_2
+I know I am going to bomb this meeting no matter how much I practice.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My team lost the match, it is entirely my fault for missing that one pass.",Personalization,en,Personalization_2
+"I have not heard back from the interview, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+I should always be achieving or I am wasting my life.,Should Statements,en,Should Statements_1
+"The review had nine positive comments and one suggestion, but all I can think about is that one negative comment.",Mental Filter,en,Mental Filter_0
+"Everyone complimented my essay, but one person was quiet, so that person secretly dreads it.",Mental Filter,en,Mental Filter_5
+"If I am not the absolute best at music, there is no point in even starting.",Black & White Thinking,en,Black & White Thinking_6
+"I am feeling lonely about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I know I am going to bomb this exam no matter how much I practice.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I forgot her birthday, I always mess up the things that matter to people.",Overgeneralization,en,Overgeneralization_0
+I sent the wrong email and now my whole year is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"My sister criticized, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The train made a weird noise, it is definitely going to catch fire on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"People should to always be kind, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I feel anxious about the {event}, so it is definitely going to go badly.",Emotional Reasoning,en,Emotional Reasoning_9
+"Everyone complimented my code, but one person was quiet, so that person secretly dislikes it.",Mental Filter,en,Mental Filter_5
+"The proposal failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+"I made one mistake in the presentation, so the whole thing was a complete joke.",Black & White Thinking,en,Black & White Thinking_0
+"I missed the plane, nothing at all goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I tripped on the sidewalk, I am forever so incredibly awkward.",Overgeneralization,en,Overgeneralization_4
+"She did not reply to my text in a day, she must think I am weird now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I missed the car, nothing at all goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"I made a error in the proposal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I feel so suffocated, this situation must be impossible to escape.",Emotional Reasoning,en,Emotional Reasoning_1
+"I accomplished everything on my to-do list except one crack, so I am completely unproductive.",Mental Filter,en,Mental Filter_9
+"If this presentation fails, my entire career is over and I will be ruined.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"She did not reply to my text in a day, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I got a position and a raise, but my boss did not encourage when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"My friend got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I scored 95% on the presentation, but I am agonizing over the 2% I got wrong.",Mental Filter,en,Mental Filter_2
+"I have to not feel nervous about this, I need to just get over it.",Should Statements,en,Should Statements_3
+I either get the best review on this or I am a total disappointment.,Black & White Thinking,en,Black & White Thinking_1
+"I feel like a imposter at work, so I must actually be bad at my opportunity.",Emotional Reasoning,en,Emotional Reasoning_0
+"My partner did ten nice things for me, but forgot to vacuuming, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"If I am not the absolute best at math, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"My partner broke up with me, I am almost never going to find love.",Overgeneralization,en,Overgeneralization_3
+I should never make a slip-up at work.,Should Statements,en,Should Statements_4
+"I got rejected from this position, I will rarely get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I had a great day but I dropped my laptop, so today was over.",Mental Filter,en,Mental Filter_1
+"The world should be right, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I made one mistake in the chore, so the whole thing was a complete embarrassment.",Black & White Thinking,en,Black & White Thinking_0
+"She did not reply to my text in a month, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"Everyone complimented my song, but one person was quiet, so that person secretly dreads it.",Mental Filter,en,Mental Filter_5
+"I am feeling upset about the audition, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I have not heard back from the exam, they clearly rejected me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"He looked at me funny, he definitely thinks I am an loser.",Jumping to Conclusions,en,Jumping to Conclusions_2
+"I have to have known better, I am so slow.",Should Statements,en,Should Statements_7
+"My boss scheduled a proposal, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I feel like a liar at work, so I must actually be bad at my opportunity.",Emotional Reasoning,en,Emotional Reasoning_0
+"My partner did ten nice things for me, but forgot to errands, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My team lost the contest, it is entirely my fault for missing that one play.",Personalization,en,Personalization_2
+"She did not reply to my text in an hour, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"I did not finish all my errands, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+"This tablet broke, technology always fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"This laptop broke, technology forever fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"I have to be over this {event} by now, there is something wrong with me.",Should Statements,en,Should Statements_0
+"They got into an argument, it is my fault for bringing them.",Personalization,en,Personalization_9
+"The assignment will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"If this meeting fails, my entire career is over and I will be ruined.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If this task fails, my entire career is over and I will be ruined.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If they do not love me completely, then they must sighed me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I got a F on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"The hamster is sick, I must have done something harmful to cause it.",Personalization,en,Personalization_6
+"The train made a weird noise, it is definitely going to rain on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My partner broke up with me, I am rarely going to find peace.",Overgeneralization,en,Overgeneralization_3
+"I missed the plane, nothing in my life goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"He yelled at me, people are forever so unfair to me.",Overgeneralization,en,Overgeneralization_6
+"I have not heard back from the test, they clearly dismissed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"I feel rejected right now, so I must be completely worthless.",Emotional Reasoning,en,Emotional Reasoning_7
+"The report failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+"There is a creak in the kitchen, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"My colleague is in a bad mood, I must have annoyed them.",Personalization,en,Personalization_4
+"The {event} was a success, but the stain was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"I made a typo in the code, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"If this project fails, my entire business is over and I will be destroyed.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"The task failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+"The {event} was a success, but the draft was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+I know I am going to bomb this meeting no matter how much I study.,Jumping to Conclusions,en,Jumping to Conclusions_1
+My back felt numb for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I burned the donut, I am always terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"He yelled at me, people are invariably so harsh to me.",Overgeneralization,en,Overgeneralization_6
+"I had a great day but I dropped my ring, so today was ruined.",Mental Filter,en,Mental Filter_1
+"I feel ugly today, so everyone must think I am hideous.",Emotional Reasoning,en,Emotional Reasoning_4
+"I had a great day but I dropped my laptop, so today was finished.",Mental Filter,en,Mental Filter_1
+"The assignment failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+I either get an A+ on this or I am a total idiot.,Black & White Thinking,en,Black & White Thinking_1
+"I made a typo in the task, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I had a great day but I dropped my glasses, so today was doomed.",Mental Filter,en,Mental Filter_1
+"I made a error in the task, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I feel guilty, so I must have done something truly evil.",Emotional Reasoning,en,Emotional Reasoning_3
+"I burned the burger, I am continually terrible at cooking.",Overgeneralization,en,Overgeneralization_2
+"Everyone complimented my painting, but one person was quiet, so that person secretly hates it.",Mental Filter,en,Mental Filter_5
+"I made a mistake in the code, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"If I am not the absolute best at music, there is no point in even attempting.",Black & White Thinking,en,Black & White Thinking_6
+"The task will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I made a blunder in the presentation, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I have not heard back from the test, they clearly failed me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"If they do not support me completely, then they must left me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"Everyone complimented my design, but one person was quiet, so that person secretly avoids it.",Mental Filter,en,Mental Filter_5
+I either get 100% on this or I am a total idiot.,Black & White Thinking,en,Black & White Thinking_1
+"My friend is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"Either I figure this out right now, or I am completely hopeless.",Black & White Thinking,en,Black & White Thinking_9
+"I forgot her birthday, I continually mess up the things that matter to people.",Overgeneralization,en,Overgeneralization_0
+"I burned the candy bar, I am always terrible at cooking.",Overgeneralization,en,Overgeneralization_2
+I know I am going to bomb this presentation no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My team lost the race, it is entirely my fault for missing that one catch.",Personalization,en,Personalization_2
+"I feel terrified of dogs, so they must be inherently terrifying.",Emotional Reasoning,en,Emotional Reasoning_2
+"I feel so stressed, this situation must be impossible to improve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I did not win the tournament, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"I feel like a fake at work, so I must actually be bad at my role.",Emotional Reasoning,en,Emotional Reasoning_0
+"I had a great day but I dropped my headphones, so today was ruined.",Mental Filter,en,Mental Filter_1
+"My friend is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My partner broke up with me, I am almost never going to find joy.",Overgeneralization,en,Overgeneralization_3
+"The proposal will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"There is a crack in the kitchen, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"If they do not encourage me completely, then they must sighed me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"If this code fails, my entire job is over and I will be ruined.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If they do not help me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"If they do not love me completely, then they must rejected me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I lost the tournament, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made a error in the code, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"The {event} was a success, but the creak was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"There is a stain in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"The world must be just, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+My stomach felt cold for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I got rejected from this internship, I will rarely get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"I need to not feel bored about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I did not get the position, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"The {event} was boring, I should have been more fun.",Personalization,en,Personalization_5
+"I should not feel nervous about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I got rejected from this job, I will rarely get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"My friend is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I got a 60% on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I ought to not feel anxious about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The deal failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+"I feel rejected right now, so I must be completely unlovable.",Emotional Reasoning,en,Emotional Reasoning_7
+"If this meeting fails, my entire reputation is over and I will be over.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"I won the game, but I did not beat my personal best, so it was a horrible performance.",Mental Filter,en,Mental Filter_6
+My arm felt sore for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"She did not reply to my text in 10 minutes, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+I ought to never make a blunder at work.,Should Statements,en,Should Statements_4
+"The bird is sick, I must have done something wrong to cause it.",Personalization,en,Personalization_6
+"I have to have known better, I am so stupid.",Should Statements,en,Should Statements_7
+"I got a 70% on the quiz, I will never graduate and will end up a total failure.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_4
+"I burned the slice of pizza, I am forever terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"My cousin is frustrated, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My boss scheduled a project, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I need to have known better, I am so slow.",Should Statements,en,Should Statements_7
+"I did not win the contest, so I am a complete loser.",Black & White Thinking,en,Black & White Thinking_8
+"My boss scheduled a report, they are definitely going to yell at me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I lost the game, I constantly lose everything.",Overgeneralization,en,Overgeneralization_8
+"I burned the bag of chips, I am continually terrible at cooking.",Overgeneralization,en,Overgeneralization_2
+"I lost the race, I always lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made one mistake in the recipe, so the whole thing was a complete embarrassment.",Black & White Thinking,en,Black & White Thinking_0
+"I got a role and a raise, but my boss did not encourage when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+I sent the wrong email and now my whole life is a complete tragedy.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"If I am not the absolute best at sports, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"There is a stain in the office, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"My partner broke up with me, I am hardly ever going to find peace.",Overgeneralization,en,Overgeneralization_3
+My neck felt numb for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I am feeling anxious about the presentation, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"I scored 99% on the interview, but I am agonizing over the 2% I got wrong.",Mental Filter,en,Mental Filter_2
+"My team lost the award, it is entirely my fault for missing that one move.",Personalization,en,Personalization_2
+"If they do not encourage me completely, then they must left me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I got rejected from this opportunity, I will rarely get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"My partner is upset, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I disagreed with my mom, but we talked it out and came to an understanding.",No Distortion,en,No Distortion_9
+"I made a error in the assignment, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My diet is ruined because I ate one slice of pizza, so I might as well eat junk forever.",Black & White Thinking,en,Black & White Thinking_3
+"My colleague has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"My friend frowned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+I know I am going to bomb this audition no matter how much I practice.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I had a great day but I dropped my ring, so today was over.",Mental Filter,en,Mental Filter_1
+"I feel so trapped, this situation must be impossible to improve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I feel guilty, so I must have done something truly terrible.",Emotional Reasoning,en,Emotional Reasoning_3
+"My sister got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"I failed this meeting, I seldom succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+I need to always be the most successful person in the room.,Should Statements,en,Should Statements_9
+I broke the glass and now my whole life is a complete catastrophe.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I should not feel upset about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"The fish is sick, I must have done something terrible to cause it.",Personalization,en,Personalization_6
+"The fish is sick, I must have done something bad to cause it.",Personalization,en,Personalization_6
+"My colleague got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"The train made a weird noise, it is definitely going to explode on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My team lost the contest, it is entirely my fault for missing that one shot.",Personalization,en,Personalization_2
+"I must have known better, I am so dumb.",Should Statements,en,Should Statements_7
+"The bike made a weird noise, it is definitely going to break down on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"My brother got passed over for a opportunity, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"People ought to always be nice, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+I know I am going to bomb this interview no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+I ought to never make a error at work.,Should Statements,en,Should Statements_4
+"I am feeling lonely about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+"My partner has been quiet lately, it must be something I said.",Personalization,en,Personalization_0
+"My boss has been quiet lately, it must be something I implied.",Personalization,en,Personalization_0
+"I made a slip-up in the task, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"If they do not smile at me completely, then they must left me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"If they do not love me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"The {event} was a success, but the dent was slightly off, making it a disaster.",Mental Filter,en,Mental Filter_8
+"My colleague has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"The hamster is sick, I must have done something bad to cause it.",Personalization,en,Personalization_6
+"I did not finish all my vacuuming, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"He disagreed with me once, so he is completely against me.",Black & White Thinking,en,Black & White Thinking_7
+I know I am going to bomb this meeting no matter how much I prepare.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I forgot her birthday, I invariably mess up the things that matter to people.",Overgeneralization,en,Overgeneralization_0
+"He yelled at me, people are invariably so unfair to me.",Overgeneralization,en,Overgeneralization_6
+"I feel like a phony at work, so I must actually be bad at my job.",Emotional Reasoning,en,Emotional Reasoning_0
+"I feel isolated right now, so I must be completely undesirable.",Emotional Reasoning,en,Emotional Reasoning_7
+"I am feeling anxious about the exam, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I either get an A+ on this or I am a total failure.,Black & White Thinking,en,Black & White Thinking_1
+"My partner broke up with me, I am seldom going to find peace.",Overgeneralization,en,Overgeneralization_3
+"I made a blunder in the assignment, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I lost my phone, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+I must never make a mistake at work.,Should Statements,en,Should Statements_4
+"Everyone complimented my design, but one person was quiet, so that person secretly hates it.",Mental Filter,en,Mental Filter_5
+"I burned the cookie, I am forever terrible at making food.",Overgeneralization,en,Overgeneralization_2
+I either get the best review on this or I am a total fool.,Black & White Thinking,en,Black & White Thinking_1
+"People must to always be nice, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"The report failed, it is completely because of my minor slip-up.",Personalization,en,Personalization_3
+"I feel like a fake at work, so I must actually be bad at my position.",Emotional Reasoning,en,Emotional Reasoning_0
+"The review had twenty positive comments and one suggestion, but all I can think about is that one flaw.",Mental Filter,en,Mental Filter_0
+"I burned the donut, I am continually terrible at cooking.",Overgeneralization,en,Overgeneralization_2
+"I burned the burger, I am continually terrible at grilling.",Overgeneralization,en,Overgeneralization_2
+"My boss scheduled a assignment, they are definitely going to demote me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+Today was busy but manageable. I got most of my cleaning done and had a nice walk.,No Distortion,en,No Distortion_0
+"Either I figure this out right now, or I am completely incompetent.",Black & White Thinking,en,Black & White Thinking_9
+"I feel like a liar at work, so I must actually be bad at my job.",Emotional Reasoning,en,Emotional Reasoning_0
+"She did not reply to my text in a day, she must think I am unlovable now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"If they do not encourage me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"I had a great day but I dropped my phone, so today was destroyed.",Mental Filter,en,Mental Filter_1
+I know I am going to bomb this test no matter how much I rehearse.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"He yelled at me, people are always so cruel to me.",Overgeneralization,en,Overgeneralization_6
+"I failed this meeting, I almost never succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+I ought to never make a mistake at work.,Should Statements,en,Should Statements_4
+"I have not heard back from the exam, they clearly declined me.",Jumping to Conclusions,en,Jumping to Conclusions_9
+"My mom rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+I either get 100% on this or I am a total loser.,Black & White Thinking,en,Black & White Thinking_1
+"People should to always be polite, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"My dad is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"I am feeling bored about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I know I am going to bomb this exam no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I made a blunder in the code, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I won the match, but I did not beat my personal best, so it was a horrible performance.",Mental Filter,en,Mental Filter_6
+"My partner did eight nice things for me, but forgot to errands, so they do not care at all.",Mental Filter,en,Mental Filter_7
+I arrived late and now my whole month is a complete failure.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I scored 98% on the interview, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"He yelled at me, people are always so unfair to me.",Overgeneralization,en,Overgeneralization_6
+"If this project fails, my entire business is over and I will be over.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"If they do not help me completely, then they must frowned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"The proposal will definitely be ignored, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"There is a leak in the office, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"The proposal failed, it is completely because of my minor mistake.",Personalization,en,Personalization_3
+"My cousin has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+I have to never make a slip-up at work.,Should Statements,en,Should Statements_4
+"I feel isolated right now, so I must be completely worthless.",Emotional Reasoning,en,Emotional Reasoning_7
+"The plane made a weird noise, it is definitely going to crash on the highway.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_9
+"She did not reply to my text in an hour, she must think I am annoying now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"My friend is in a bad mood, I must have upset them.",Personalization,en,Personalization_4
+I know I am going to bomb this meeting no matter how much I try.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I scored an A on the interview, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"I made one mistake in the chore, so the whole thing was a complete waste.",Black & White Thinking,en,Black & White Thinking_0
+"I made a mistake in the assignment, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I am feeling upset about the meeting, so I am going to prepare for an hour and then rest.",No Distortion,en,No Distortion_6
+I have to always be the fastest person in the room.,Should Statements,en,Should Statements_9
+My head felt heavy for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"The world ought to be fair, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"He yelled at me, people are constantly so cold to me.",Overgeneralization,en,Overgeneralization_6
+"I feel rejected right now, so I must be completely unwanted.",Emotional Reasoning,en,Emotional Reasoning_7
+"I scored an A on the audition, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"My boss scheduled a meeting, they are definitely going to reprimand me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I made one mistake in the presentation, so the whole thing was a complete embarrassment.",Black & White Thinking,en,Black & White Thinking_0
+"I feel abandoned right now, so I must be completely unwanted.",Emotional Reasoning,en,Emotional Reasoning_7
+"My boss scheduled a code, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"If they do not help me completely, then they must ignored me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"The dog is sick, I must have done something careless to cause it.",Personalization,en,Personalization_6
+"My sister has been quiet lately, it must be something I caused.",Personalization,en,Personalization_0
+"My partner broke up with me, I am hardly ever going to find joy.",Overgeneralization,en,Overgeneralization_3
+"I made a error in the deal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"My mom yelled, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"The proposal failed, it is completely because of my minor error.",Personalization,en,Personalization_3
+He ought to know exactly how I feel without me having to tell him.,Should Statements,en,Should Statements_5
+"The world ought to be just, and I cannot handle that it isn't.",Should Statements,en,Should Statements_8
+"I did not get the promotion, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"My partner did nine nice things for me, but forgot to vacuuming, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"I feel like a fraud at work, so I must actually be bad at my position.",Emotional Reasoning,en,Emotional Reasoning_0
+"I got a position and a raise, but my boss did not praise when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I ought to have known better, I am so stupid.",Should Statements,en,Should Statements_7
+I forgot my keys and now my whole evening is a complete mess.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"I did not finish all my dishes, so today was completely ruined.",Black & White Thinking,en,Black & White Thinking_5
+"I failed this meeting, I hardly ever succeed at anything important.",Overgeneralization,en,Overgeneralization_5
+"I lost the tournament, I invariably lose everything.",Overgeneralization,en,Overgeneralization_8
+"I burned the candy bar, I am constantly terrible at cooking.",Overgeneralization,en,Overgeneralization_2
+"The {event} did not go perfectly, but we learned a lot for next time.",No Distortion,en,No Distortion_3
+"This printer broke, technology forever fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"There is a draft in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I feel like a phony at work, so I must actually be bad at my promotion.",Emotional Reasoning,en,Emotional Reasoning_0
+"My cousin sighed, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My boss scheduled a assignment, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"I burned the burger, I am invariably terrible at preparing dinner.",Overgeneralization,en,Overgeneralization_2
+I said the wrong thing and now my whole month is a complete disaster.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"The task will definitely be failed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+My eye felt numb for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+I said the wrong thing and now my whole year is a complete nightmare.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_2
+"My dad got passed over for a promotion, I feel guilty like it is my fault.",Personalization,en,Personalization_7
+"He looked at me funny, he definitely thinks I am an weirdo.",Jumping to Conclusions,en,Jumping to Conclusions_2
+"I lost the match, I forever lose everything.",Overgeneralization,en,Overgeneralization_8
+"I made a error in the presentation, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I feel forgotten right now, so I must be completely worthless.",Emotional Reasoning,en,Emotional Reasoning_7
+"I feel so panicked, this situation must be impossible to escape.",Emotional Reasoning,en,Emotional Reasoning_1
+"The project will definitely be rejected, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"The {event} was beautiful, but it fail for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+"My colleague has been quiet lately, it must be something I did.",Personalization,en,Personalization_0
+"I did not get the opportunity, which is disappointing, but I will keep applying.",No Distortion,en,No Distortion_4
+"I won the award, but I did not beat my personal best, so it was a terrible performance.",Mental Filter,en,Mental Filter_6
+"My brother is sad, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at painting, there is no point in even attempting.",Black & White Thinking,en,Black & White Thinking_6
+I know I am going to bomb this interview no matter how much I study.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"People need to always be polite, and it infuriates me when they aren't.",Should Statements,en,Should Statements_2
+"I lost the award, I continually lose everything.",Overgeneralization,en,Overgeneralization_8
+"If they do not smile at me completely, then they must yelled me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"My boss scheduled a deal, they are definitely going to criticize me.",Jumping to Conclusions,en,Jumping to Conclusions_4
+"If they do not help me completely, then they must abandoned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"It rained on our {event}, it is all my fault for arranging it today.",Personalization,en,Personalization_1
+"I missed the bus, nothing always goes right in my life.",Overgeneralization,en,Overgeneralization_7
+"If I am not the absolute best at music, there is no point in even trying.",Black & White Thinking,en,Black & White Thinking_6
+"Either I figure this out right now, or I am completely incapable.",Black & White Thinking,en,Black & White Thinking_9
+"The report will definitely be declined, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+"I have to not feel sad about this, I need to just get over it.",Should Statements,en,Should Statements_3
+"I lost my headphones, I will never be able to function normally again.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_6
+"I feel bleak about the future, so things will never get better.",Emotional Reasoning,en,Emotional Reasoning_6
+"I feel so panicked, this situation must be impossible to change.",Emotional Reasoning,en,Emotional Reasoning_1
+"I feel so panicked, this situation must be impossible to improve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I tripped on the sidewalk, I am constantly so incredibly stupid.",Overgeneralization,en,Overgeneralization_4
+"I tripped on the sidewalk, I am always so incredibly foolish.",Overgeneralization,en,Overgeneralization_4
+"I feel forgotten right now, so I must be completely broken.",Emotional Reasoning,en,Emotional Reasoning_7
+"If they do not smile at me completely, then they must frowned me entirely.",Black & White Thinking,en,Black & White Thinking_2
+I know I am going to bomb this audition no matter how much I study.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"My partner is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"There is a draft in the apartment, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I did not finish all my cleaning, so today was completely pointless.",Black & White Thinking,en,Black & White Thinking_5
+"I did not finish all my cooking, so today was completely useless.",Black & White Thinking,en,Black & White Thinking_5
+"I feel terrified of dogs, so they must be inherently deadly.",Emotional Reasoning,en,Emotional Reasoning_2
+I should always be useful or I am wasting my life.,Should Statements,en,Should Statements_1
+"I got rejected from this position, I will almost never get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"My sister abandoned, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"My partner did a dozen nice things for me, but forgot to dishes, so they do not care at all.",Mental Filter,en,Mental Filter_7
+"My colleague is angry, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"My dad rejected, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"If this project fails, my entire reputation is over and I will be destroyed.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_1
+"The meeting failed, it is completely because of my minor slip-up.",Personalization,en,Personalization_3
+I must always be the best person in the room.,Should Statements,en,Should Statements_9
+"I made a mistake in the proposal, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I feel so stressed, this situation must be impossible to solve.",Emotional Reasoning,en,Emotional Reasoning_1
+"I had a great day but I dropped my glasses, so today was ruined.",Mental Filter,en,Mental Filter_1
+"I burned the slice of pizza, I am forever terrible at preparing dinner.",Overgeneralization,en,Overgeneralization_2
+"The assignment will definitely be dismissed, so why bother.",Jumping to Conclusions,en,Jumping to Conclusions_7
+I have to read every single day or I am a failure.,Should Statements,en,Should Statements_6
+"My boss is nervous, I will ask if they want to talk about it.",No Distortion,en,No Distortion_5
+"If I am not the absolute best at coding, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"She did not reply to my text in 10 minutes, she must think I am boring now.",Jumping to Conclusions,en,Jumping to Conclusions_0
+"If I am not the absolute best at painting, there is no point in even learning.",Black & White Thinking,en,Black & White Thinking_6
+"I feel forgotten right now, so I must be completely unwanted.",Emotional Reasoning,en,Emotional Reasoning_7
+"If they do not praise me completely, then they must sighed me entirely.",Black & White Thinking,en,Black & White Thinking_2
+"This computer broke, technology continually fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"The assignment failed, it is completely because of my minor blunder.",Personalization,en,Personalization_3
+My arm felt tingly for a second and now I am sure I have a deadly disease.,Magnification and Catastrophizing,en,Magnification and Catastrophizing_0
+"I feel abandoned right now, so I must be completely broken.",Emotional Reasoning,en,Emotional Reasoning_7
+"I feel terrified of crowds, so they must be inherently unsafe.",Emotional Reasoning,en,Emotional Reasoning_2
+"I got rejected from this job, I will hardly ever get hired anywhere.",Overgeneralization,en,Overgeneralization_1
+"This printer broke, technology always fails me when I need it.",Overgeneralization,en,Overgeneralization_9
+"If I am not the absolute best at music, there is no point in even practicing.",Black & White Thinking,en,Black & White Thinking_6
+"There is a creak in the building, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"My partner criticized, this is the worst possible thing that could happen.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_5
+"I feel so trapped, this situation must be impossible to escape.",Emotional Reasoning,en,Emotional Reasoning_1
+"The bird is sick, I must have done something terrible to cause it.",Personalization,en,Personalization_6
+"The {event} did not go perfectly, so I am convinced the rest of the an hour will be terrible.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_3
+"I feel like a fake at work, so I must actually be bad at my opportunity.",Emotional Reasoning,en,Emotional Reasoning_0
+"There is a dent in the house, it is going to collapse and we will lose everything.",Magnification and Catastrophizing,en,Magnification and Catastrophizing_7
+"I feel so suffocated, this situation must be impossible to fix.",Emotional Reasoning,en,Emotional Reasoning_1
+"I ought to be over this {event} by now, there is something wrong with me.",Should Statements,en,Should Statements_0
+"The {event} was beautiful, but it catch fire for one hour and that ruined the whole thing.",Mental Filter,en,Mental Filter_3
+I know I am going to bomb this presentation no matter how much I practice.,Jumping to Conclusions,en,Jumping to Conclusions_1
+"I got a position and a raise, but my boss did not support when he told me, so it is awful.",Mental Filter,en,Mental Filter_4
+"I burned the candy bar, I am constantly terrible at baking.",Overgeneralization,en,Overgeneralization_2
+"I made a slip-up in the project, but I corrected it and my manager said it was okay.",No Distortion,en,No Distortion_1
+"I scored 99% on the test, but I am agonizing over the 1% I got wrong.",Mental Filter,en,Mental Filter_2
+"The bird is sick, I must have done something bad to cause it.",Personalization,en,Personalization_6

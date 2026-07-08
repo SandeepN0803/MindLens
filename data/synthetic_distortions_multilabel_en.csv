@@ -1,0 +1,81 @@
+text,distortion_label,language
+"My chest is feeling slightly tight, which means I am definitely having a heart attack. I feel so terrified, so it must be true.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I made a typo in the email to the boss, I am going to get fired and lose my house. I feel so ashamed, it proves I am incompetent.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I have a headache, it is probably a brain tumor. I feel this deep sense of dread, so I just know something terrible is happening to me.","Magnification and Catastrophizing,Emotional Reasoning",en
+"The stock market dipped today, my retirement is ruined. I feel so panicked, I must be completely destitute now.","Magnification and Catastrophizing,Emotional Reasoning",en
+"My partner hasn't texted back in 2 hours, they have definitely been in a fatal car crash. My anxiety is peaking, so I know I am right.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I failed this one quiz, I am going to fail out of college and my life is over. I feel utterly hopeless, which means there is no future for me.","Magnification and Catastrophizing,Emotional Reasoning",en
+"My throat is sore, I definitely have a terminal illness. The fear in my chest tells me that my life is effectively over.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I stumbled during my presentation, the entire department thinks I am a joke and I will never get promoted. I feel so humiliated, I must be a failure.","Magnification and Catastrophizing,Emotional Reasoning",en
+"My flight is delayed by 30 minutes, I am going to miss my connection and be stranded forever. I feel so angry and trapped, this situation is completely impossible.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I accidentally scratched the rental car, they are going to sue me for everything I have. I feel so incredibly guilty, I must be a terrible person.","Magnification and Catastrophizing,Emotional Reasoning",en
+"The dog threw up, he is definitely dying and it is going to cost me thousands of dollars. I feel so overwhelmed, this is the end of the world.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I got a C on my paper, I am destined to be a complete failure in life. I feel like a loser, so I must actually be one.","Magnification and Catastrophizing,Emotional Reasoning",en
+"My boss asked to see me, I am getting fired today. I feel sick to my stomach, so I know I am in huge trouble.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I forgot to pay the electricity bill, they are going to shut off my power and I will freeze to death. I feel so stupid, this disaster is all my fault.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I feel so unlovable right now, which means I will die alone and nobody will ever care about me. This feeling is proof of my bleak future.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I should have known better than to trust him, it is entirely my fault he lied to me.","Should Statements,Personalization",en
+"I must always be perfectly happy for my kids, and if they are crying, it is because I am a terrible mother.","Should Statements,Personalization",en
+"I ought to be making more money by this age, my parents are disappointed in me and it is all my own doing.","Should Statements,Personalization",en
+"I should never make a mistake at work, and the fact that the project is delayed is 100% on my shoulders.","Should Statements,Personalization",en
+"I have to be the one to fix my sister's marriage, if they get divorced it is because I didn't intervene enough.","Should Statements,Personalization",en
+"I should be working out every single day, the fact that my partner seems distant is definitely because I am letting myself go.","Should Statements,Personalization",en
+"I must always have a spotless house, when guests look uncomfortable it is clearly because they see my failure.","Should Statements,Personalization",en
+"I should have predicted that the market would crash, my family's financial struggle is entirely my fault.","Should Statements,Personalization",en
+"I ought to be more outgoing, the party was boring because I didn't entertain people properly.","Should Statements,Personalization",en
+"I must be the perfect friend at all times, if she is having a bad day, I clearly didn't support her enough.","Should Statements,Personalization",en
+"I should never feel angry, the argument we had was completely my fault because of my terrible temper.","Should Statements,Personalization",en
+"I have to succeed in this business, if it fails, it means I am personally defective.","Should Statements,Personalization",en
+"I should be able to handle everything on my own, asking for help means I am a burden to everyone around me.","Should Statements,Personalization",en
+"I must always eat perfectly healthy, if my dog gets sick it is probably because I fed him a bad scrap and I am awful.","Should Statements,Personalization",en
+"I ought to have a better relationship with my boss, the team's low morale is entirely due to my lack of leadership.","Should Statements,Personalization",en
+"I didn't get the job offer, so I am a complete failure and I will never ever get hired by anyone.","Black & White Thinking,Overgeneralization",en
+"He canceled our first date, people are always completely unreliable and I am destined to be alone forever.","Black & White Thinking,Overgeneralization",en
+"I ruined dinner, I am a totally worthless cook and every meal I make turns out to be a disaster.","Black & White Thinking,Overgeneralization",en
+"I got rejected from that publisher, my writing is complete garbage and no one will ever read my books.","Black & White Thinking,Overgeneralization",en
+"My friend forgot to text me back, she is entirely selfish and everybody always ignores me.","Black & White Thinking,Overgeneralization",en
+"I missed a day of studying, my entire week is ruined and I always give up on my goals.","Black & White Thinking,Overgeneralization",en
+"I had a panic attack at the store, I am completely broken and I will never be able to live a normal life.","Black & White Thinking,Overgeneralization",en
+"My car broke down again, this car is a total piece of junk and nothing good ever happens to me.","Black & White Thinking,Overgeneralization",en
+"I made a fool of myself at the party, I am a total social outcast and people will always hate me.","Black & White Thinking,Overgeneralization",en
+"I couldn't lift the weight at the gym, I am completely weak and I will never get stronger no matter what.","Black & White Thinking,Overgeneralization",en
+"I slipped off my diet today, all my progress is totally destroyed and I will always be overweight.","Black & White Thinking,Overgeneralization",en
+"My boss criticized my code, I am an entirely incompetent developer and every project I touch fails.","Black & White Thinking,Overgeneralization",en
+"I argued with my wife, our marriage is a complete sham and we are always fighting.","Black & White Thinking,Overgeneralization",en
+"I lost  in the stock market today, investing is a total scam and I always lose money.","Black & White Thinking,Overgeneralization",en
+"The movie was slightly boring, it was a complete waste of time and all modern cinema is terrible.","Black & White Thinking,Overgeneralization",en
+The teacher praised my essay but marked one spelling error; she must think I am an idiot.,"Mental Filter,Jumping to Conclusions",en
+"I had a great date but he looked at his watch once, he definitely thinks I am boring and wants to leave.","Mental Filter,Jumping to Conclusions",en
+"The team celebrated the launch, but I noticed a tiny bug in the UI, everyone is going to think the whole product is garbage.","Mental Filter,Jumping to Conclusions",en
+"My performance review was 99% positive but mentioned I could speak up more, my boss is clearly trying to find a reason to fire me.","Mental Filter,Jumping to Conclusions",en
+"I had a fun vacation, but it rained for one hour on Tuesday, my friends are going to think the whole trip was ruined.","Mental Filter,Jumping to Conclusions",en
+"The audience clapped, but one person was looking at their phone, they all secretly hated my speech.","Mental Filter,Jumping to Conclusions",en
+"I got 9 out of 10 questions right, but I missed the last one, the professor definitely thinks I am a fraud.","Mental Filter,Jumping to Conclusions",en
+"My wife said she loved the gift but asked for the receipt just in case, she obviously hates it and thinks I have terrible taste.","Mental Filter,Jumping to Conclusions",en
+"We had a great quarter, but one client churned, the CEO is definitely going to shut down our department.","Mental Filter,Jumping to Conclusions",en
+"I lost 10 pounds, but I gained 1 pound this week, everyone at the gym is definitely judging me for getting fatter.","Mental Filter,Jumping to Conclusions",en
+"The party was packed, but my crush didn't show up, everybody must think I throw terrible parties.","Mental Filter,Jumping to Conclusions",en
+"I got a promotion, but the pay raise was slightly less than I wanted, they clearly don't value me at all.","Mental Filter,Jumping to Conclusions",en
+"I painted a beautiful landscape, but the cloud looks weird, art critics would definitely laugh at this.","Mental Filter,Jumping to Conclusions",en
+"My dog is usually so well-behaved, but he barked at the mailman today, the neighbors definitely think he is dangerous.","Mental Filter,Jumping to Conclusions",en
+"I cooked a massive feast, but the rolls were slightly burnt, my guests are going to go home and tell everyone I am a terrible host.","Mental Filter,Jumping to Conclusions",en
+"I felt a random twinge in my leg, it is definitely a blood clot and I am going to die tonight. I feel absolutely terrified, so it must be true.","Magnification and Catastrophizing,Emotional Reasoning",en
+"My code has a bug, the entire production database is going to be wiped. I feel so guilty, I must be a terrible engineer.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I lost my keys, I will never be able to get into my house again and will be homeless. I feel despair, so this is my new reality.","Magnification and Catastrophizing,Emotional Reasoning",en
+"The teacher sighed while grading my test, I failed and I am going to get kicked out of school. I feel so ashamed, I know I failed.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I forgot to feed the cat this morning, he is going to starve to death before I get home. I feel awful, so I am a completely abusive pet owner.","Magnification and Catastrophizing,Emotional Reasoning",en
+"I should have remembered her birthday, the fact she is crying is completely my fault and I am a horrible person.","Should Statements,Personalization",en
+"I must always be the strongest person in the room, if my team fails it is because I didn't carry them enough.","Should Statements,Personalization",en
+"I ought to be married by now, my parents' embarrassment is 100% because I am unlovable.","Should Statements,Personalization",en
+"I should never show weakness, my friend's panic attack happened because I wasn't a solid enough rock for them.","Should Statements,Personalization",en
+"I have to make everyone happy, the tension at dinner is entirely my fault for not making a better joke.","Should Statements,Personalization",en
+"I didn't get an A on the test, I am a complete failure and I will never succeed at anything academically.","Black & White Thinking,Overgeneralization",en
+"My boyfriend and I argued, our relationship is a total nightmare and we are always fighting about everything.","Black & White Thinking,Overgeneralization",en
+"I missed a single shot in the game, I am entirely useless and I always drag the whole team down.","Black & White Thinking,Overgeneralization",en
+"I burned the toast, I am a completely hopeless adult and I will always ruin every meal I make.","Black & White Thinking,Overgeneralization",en
+"One person disagreed with my post, everyone on the internet hates me and I am always completely wrong.","Black & White Thinking,Overgeneralization",en
+"The concert was amazing, but I hit one wrong note, the entire audience thinks I am a terrible musician.","Mental Filter,Jumping to Conclusions",en
+"My boss gave me a glowing review, but said I could improve my punctuality, he is definitely planning to fire me.","Mental Filter,Jumping to Conclusions",en
+"We had a great family dinner, but my dad frowned once, he definitely thinks my life choices are a mistake.","Mental Filter,Jumping to Conclusions",en
+"I won the award, but the presenter mispronounced my name, they clearly think I am completely irrelevant.","Mental Filter,Jumping to Conclusions",en
+"The house is perfectly clean, but there is one spot on the mirror, my guests are going to think I am a total slob.","Mental Filter,Jumping to Conclusions",en

@@ -27,7 +27,7 @@ MODEL_PATH = os.path.join(os.path.dirname(__file__), "models", "distortion_model
 
 def load_distortion_model() -> None:
     """
-    Loads the fine-tuned DistilBERT model for single-label cognitive distortion classification.
+    Loads the fine-tuned DistilBERT model for multi-label cognitive distortion classification.
     Expects the model to be saved in /backend/models/distortion_model/
     """
     global _distortion_tokenizer, _distortion_model
@@ -44,7 +44,7 @@ def load_distortion_model() -> None:
 
 def detect_distortions(text: str) -> List[Dict[str, Union[str, float]]]:
     """
-    Detects cognitive distortions in the text using single-label classification.
+    Detects cognitive distortions in the text using multi-label classification.
     
     Args:
         text (str): The English journal entry (or translated to English).
@@ -81,22 +81,23 @@ def detect_distortions(text: str) -> List[Dict[str, Union[str, float]]]:
         with torch.no_grad():
             outputs = _distortion_model(**inputs)
             
-        # Single-label classification uses Softmax
+        # Multi-label classification uses Sigmoid
         logits = outputs.logits
-        probs = torch.softmax(logits, dim=-1)[0].numpy()
-        
-        top_idx = int(probs.argmax())
-        top_prob = float(probs[top_idx])
-        top_label = DISTORTIONS[top_idx]
+        probs = torch.sigmoid(logits)[0].numpy()
         
         detected = []
-        if top_label != "No Distortion":
-            detected.append({
-                "label": top_label,
-                "confidence": round(top_prob, 4),
-                "trigger_phrase": text[:20] + "..."  # In a real scenario, we might extract the exact attention span
-            })
+        for idx, prob in enumerate(probs):
+            if prob >= 0.4:  # Threshold for multi-label
+                label = DISTORTIONS[idx]
+                if label != "No Distortion":
+                    detected.append({
+                        "label": label,
+                        "confidence": round(float(prob), 4),
+                        "trigger_phrase": text[:20] + "..."  # Mock trigger phrase
+                    })
                 
+        # Sort by confidence descending
+        detected.sort(key=lambda x: x["confidence"], reverse=True)
         return detected
         
     except Exception as e:

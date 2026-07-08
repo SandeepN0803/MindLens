@@ -13,19 +13,21 @@ def evaluate_predictions(y_true, y_pred, target_names=None):
     Returns:
         dict: A dictionary containing accuracy, precision, recall, f1, and a detailed report.
     """
-    # Use macro average to handle class imbalance well
-    accuracy = accuracy_score(y_true, y_pred)
+    # For multi-label, exact match accuracy is often too strict, so we focus on F1
+    exact_match_accuracy = accuracy_score(y_true, y_pred)
     precision = precision_score(y_true, y_pred, average='macro', zero_division=0)
     recall = recall_score(y_true, y_pred, average='macro', zero_division=0)
-    f1 = f1_score(y_true, y_pred, average='macro', zero_division=0)
+    f1_macro = f1_score(y_true, y_pred, average='macro', zero_division=0)
+    f1_micro = f1_score(y_true, y_pred, average='micro', zero_division=0)
     
     report = classification_report(y_true, y_pred, target_names=target_names, zero_division=0)
     
     return {
-        "accuracy": accuracy,
+        "accuracy": exact_match_accuracy,
         "precision": precision,
         "recall": recall,
-        "f1_score": f1,
+        "f1_score_macro": f1_macro,
+        "f1_score_micro": f1_micro,
         "report": report
     }
 
@@ -34,10 +36,11 @@ def print_evaluation_report(metrics_dict, model_name="Model"):
     Prints a formatted evaluation report.
     """
     print(f"--- Evaluation Report for {model_name} ---")
-    print(f"Accuracy:  {metrics_dict['accuracy']:.4f}")
-    print(f"Precision: {metrics_dict['precision']:.4f}")
-    print(f"Recall:    {metrics_dict['recall']:.4f}")
-    print(f"F1 Score:  {metrics_dict['f1_score']:.4f}")
+    print(f"Exact Match Acc: {metrics_dict['accuracy']:.4f}")
+    print(f"Precision (Macro): {metrics_dict['precision']:.4f}")
+    print(f"Recall (Macro):    {metrics_dict['recall']:.4f}")
+    print(f"F1 Score (Macro):  {metrics_dict['f1_score_macro']:.4f}")
+    print(f"F1 Score (Micro):  {metrics_dict['f1_score_micro']:.4f}")
     print("\nDetailed Classification Report:")
     print(metrics_dict['report'])
     print("-" * 40)

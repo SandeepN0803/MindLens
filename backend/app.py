@@ -12,7 +12,7 @@ from distortion_model import detect_distortions
 from reframing_engine import reframe_distortions
 
 # Import DB functions
-from database import init_db, save_journal_entry, save_analysis_result
+from database import init_db, save_journal_entry, save_analysis_result, get_history
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -117,5 +117,36 @@ def analyze():
     
     return jsonify(response_payload), 200
 
+@app.route("/api/history", methods=["GET"])
+def history():
+    user_id = request.args.get("user_id", "local_user")
+    limit = int(request.args.get("limit", 50))
+    
+    try:
+        entries = get_history(user_id, limit)
+        return jsonify(entries), 200
+    except Exception as e:
+        logger.error(f"Failed to fetch history: {e}")
+        return jsonify({"error": "Failed to fetch history"}), 500
+
+@app.route("/api/analytics", methods=["GET"])
+def analytics():
+    # In a real app we'd do this via SQL aggregations in database.py.
+    # For now, we'll fetch history and compute on the fly.
+    user_id = request.args.get("user_id", "local_user")
+    days = int(request.args.get("days", 30))
+    
+    try:
+        entries = get_history(user_id, limit=100)
+        
+        # We can implement basic aggregations here if requested, 
+        # but the frontend can also aggregate the `entries` array.
+        # Let's return raw entries for the frontend to compute chart data,
+        # or we could return pre-computed data.
+        return jsonify({"entries": entries}), 200
+    except Exception as e:
+        logger.error(f"Failed to fetch analytics: {e}")
+        return jsonify({"error": "Failed to fetch analytics"}), 500
+
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5001)
