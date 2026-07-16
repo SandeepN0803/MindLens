@@ -11,9 +11,9 @@ sys.path.append('backend')
 import eval_utils
 
 print('Loading datasets...')
-df1 = pd.read_csv('data/synthetic_distortions_en_v2.csv')
-df2 = pd.read_csv('data/synthetic_distortions_multilabel_en.csv')
-df = pd.concat([df1, df2], ignore_index=True)
+df = pd.read_csv('data/synthetic_distortions_en_ollama.csv')
+# df2 = pd.read_csv('data/synthetic_distortions_multilabel_en.csv')
+# df = pd.concat([df1, df2], ignore_index=True)
 df = df.sample(frac=1, random_state=42).reset_index(drop=True)
 print(f'Total rows loaded: {len(df)}')
 
@@ -81,7 +81,7 @@ def compute_metrics(eval_pred):
 
 training_args = TrainingArguments(
     output_dir='./results',
-    num_train_epochs=3,
+    num_train_epochs=5,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
     learning_rate=2e-5,
@@ -91,7 +91,25 @@ training_args = TrainingArguments(
     load_best_model_at_end=True
 )
 
-trainer = Trainer(
+# Calculate pos_weights for BCEWithLogitsLoss based on train_df
+label_matrix = np.array(train_df['label'].tolist())
+pos_counts = label_matrix.sum(axis=0)
+total_samples = len(label_matrix)
+pos_weights = (total_samples - pos_counts) / np.maximum(pos_counts, 1)
+pos_weights_tensor = torch.tensor(pos_weights, dtype=torch.float)
+
+class CustomTrainer(Trainer):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
+        labels = inputs.pop("labels")
+        outputs = model(**inputs)
+        logits = outputs.logits
+        # Ensure pos_weight is on the same device as logits
+        pos_weight = pos_weights_tensor.to(logits.device)
+        loss_fct = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+        loss = loss_fct(logits, labels)
+        return (loss, outputs) if return_outputs else loss
+
+trainer = CustomTrainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
@@ -110,3 +128,26 @@ output_dir = 'backend/models/distortion_model'
 model.save_pretrained(output_dir)
 tokenizer.save_pretrained(output_dir)
 print(f'Model saved to {output_dir}')
+
+# --- Threshold Sweep on Validation Set ---
+print('\nPerforming threshold sweep on validation set...')
+val_preds = trainer.predict(val_dataset)
+val_logits = val_preds.predictions
+val_labels = val_preds.label_ids
+val_probs = 1 / (1 + np.exp(-val_logits))
+
+thresholds = [0.25, 0.30, 0.35, 0.40, 0.45]
+best_f1 = -1
+best_thresh = 0.4
+
+for t in thresholds:
+    t_preds = (val_probs > t).astype(int)
+    f1 = eval_utils.f1_score(val_labels, t_preds, average='macro', zero_division=0)
+    print(f"Threshold: {t:.2f} | Validation Macro F1: {f1:.4f}")
+    if f1 > best_f1:
+        best_f1 = f1
+        best_thresh = t
+
+print(f"\nBest threshold selected: {best_thresh:.2f} (Val Macro F1: {best_f1:.4f})")
+with open(os.path.join(output_dir, 'best_threshold.txt'), 'w') as f:
+    f.write(str(best_thresh))

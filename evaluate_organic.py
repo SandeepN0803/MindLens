@@ -9,6 +9,15 @@ tokenizer = AutoTokenizer.from_pretrained(model_dir)
 model = AutoModelForSequenceClassification.from_pretrained(model_dir)
 model.eval()
 
+import os
+threshold_path = os.path.join(model_dir, 'best_threshold.txt')
+if os.path.exists(threshold_path):
+    with open(threshold_path, 'r') as f:
+        best_threshold = float(f.read().strip())
+else:
+    best_threshold = 0.4
+print(f"Using threshold: {best_threshold}")
+
 # 10 completely organic sentences, one for each core distortion + 1 no distortion
 organic_sentences = [
     # Magnification and Catastrophizing
@@ -47,8 +56,8 @@ for text, true_label_str in organic_sentences:
     logits = outputs.logits
     probs = torch.sigmoid(logits).squeeze().tolist()
     
-    # Threshold at 0.4
-    pred_vec = [1 if p >= 0.4 else 0 for p in probs]
+    # Threshold using best_threshold
+    pred_vec = [1 if p >= best_threshold else 0 for p in probs]
     y_pred.append(pred_vec)
     
     # Ground truth
@@ -62,9 +71,10 @@ for text, true_label_str in organic_sentences:
     print(f"\nText: {text}")
     print(f"True: {true_label_str}")
     print(f"Pred: {', '.join(pred_labels)}")
+    print(f"Probs: {[round(p, 3) for p in probs]}")
 
 metrics = evaluate_predictions(y_true, y_pred)
 print("\n--- Organic Set Metrics ---")
-print(f"Macro F1: {metrics.get('macro_f1', 0):.3f}")
-print(f"Micro F1: {metrics.get('micro_f1', 0):.3f}")
-print(f"Exact Match: {metrics.get('exact_match_accuracy', 0):.3f}")
+print(f"Macro F1: {metrics.get('f1_score_macro', 0):.3f}")
+print(f"Micro F1: {metrics.get('f1_score_micro', 0):.3f}")
+print(f"Exact Match: {metrics.get('accuracy', 0):.3f}")
