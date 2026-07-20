@@ -97,6 +97,7 @@ pos_counts = label_matrix.sum(axis=0)
 total_samples = len(label_matrix)
 pos_weights = (total_samples - pos_counts) / np.maximum(pos_counts, 1)
 pos_weights_tensor = torch.tensor(pos_weights, dtype=torch.float)
+pos_weights_tensor = torch.clamp(pos_weights_tensor, max=5.0)
 
 class CustomTrainer(Trainer):
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
@@ -130,24 +131,29 @@ tokenizer.save_pretrained(output_dir)
 print(f'Model saved to {output_dir}')
 
 # --- Threshold Sweep on Validation Set ---
-print('\nPerforming threshold sweep on validation set...')
+print('\nPerforming per-class threshold sweep on validation set...')
 val_preds = trainer.predict(val_dataset)
 val_logits = val_preds.predictions
 val_labels = val_preds.label_ids
 val_probs = 1 / (1 + np.exp(-val_logits))
 
-thresholds = [0.25, 0.30, 0.35, 0.40, 0.45]
-best_f1 = -1
-best_thresh = 0.4
+thresholds = [0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60]
+best_thresholds = {}
 
-for t in thresholds:
-    t_preds = (val_probs > t).astype(int)
-    f1 = eval_utils.f1_score(val_labels, t_preds, average='macro', zero_division=0)
-    print(f"Threshold: {t:.2f} | Validation Macro F1: {f1:.4f}")
-    if f1 > best_f1:
-        best_f1 = f1
-        best_thresh = t
+for class_idx, class_name in id2label.items():
+    best_f1 = -1
+    best_thresh = 0.4
+    for t in thresholds:
+        t_preds = (val_probs[:, class_idx] > t).astype(int)
+        # Calculate F1 for this specific class
+        f1 = eval_utils.f1_score(val_labels[:, class_idx], t_preds, average='binary', zero_division=0)
+        if f1 > best_f1:
+            best_f1 = f1
+            best_thresh = t
+    best_thresholds[class_idx] = best_thresh
+    print(f"Class: {class_name} | Best Threshold: {best_thresh:.2f} | Val F1: {best_f1:.4f}")
 
-print(f"\nBest threshold selected: {best_thresh:.2f} (Val Macro F1: {best_f1:.4f})")
-with open(os.path.join(output_dir, 'best_threshold.txt'), 'w') as f:
-    f.write(str(best_thresh))
+import json
+with open(os.path.join(output_dir, 'best_thresholds.json'), 'w') as f:
+    json.dump(best_thresholds, f)
+print(f"Saved per-class thresholds to {os.path.join(output_dir, 'best_thresholds.json')}")

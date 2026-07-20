@@ -2,6 +2,17 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 
 import { Activity } from 'lucide-react'
 
 export default function EmotionChart({ emotions }) {
+  if (!emotions || emotions.length === 0) return null
+  
+  if (emotions[0]?.error) {
+    return (
+      <div className="glass rounded-2xl p-6 text-center text-red-400/80">
+        <Activity className="w-10 h-10 mx-auto mb-3 opacity-50" />
+        <p>Emotion analysis unavailable at this time.</p>
+      </div>
+    )
+  }
+
   // Format data for Recharts
   const data = emotions.map(e => ({
     name: e.label.charAt(0).toUpperCase() + e.label.slice(1),

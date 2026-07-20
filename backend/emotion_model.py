@@ -111,7 +111,7 @@ def analyze_emotion(text: str, language_code: str) -> List[Dict[str, Union[str, 
         
     except Exception as e:
         logger.error(f"Emotion analysis failed: {e}")
-        return []
+        return [{"error": True}]
 
 # Quick local test
 if __name__ == "__main__":

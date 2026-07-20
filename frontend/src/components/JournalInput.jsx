@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { Sparkles, Loader2 } from 'lucide-react'
 
-export default function JournalInput({ onAnalyzeSuccess }) {
+export default function JournalInput({ onAnalyzeSuccess, onLoadingChange }) {
   const [text, setText] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
   const handleAnalyze = async () => {
-    if (!text.trim()) return
+    if (loading || !text.trim()) return
     setLoading(true)
+    if (onLoadingChange) onLoadingChange(true)
     setError(null)
     
     try {
@@ -30,6 +31,7 @@ export default function JournalInput({ onAnalyzeSuccess }) {
       setError(err.message)
     } finally {
       setLoading(false)
+      if (onLoadingChange) onLoadingChange(false)
     }
   }
 
@@ -71,7 +73,7 @@ export default function JournalInput({ onAnalyzeSuccess }) {
       </div>
 
       {error && (
-        <div className="mt-4 p-3 bg-red-500/20 text-red-200 rounded-lg text-sm border border-red-500/30">
+        <div className="mt-4 p-3 bg-red-500/20 text-red-200 rounded-lg text-sm border border-red-500/30" aria-live="assertive">
           {error}
         </div>
       )}

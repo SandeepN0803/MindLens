@@ -37,7 +37,7 @@ def load_sentiment_models() -> None:
             "text-classification", 
             model="cardiffnlp/twitter-xlm-roberta-base-sentiment",
             tokenizer="cardiffnlp/twitter-xlm-roberta-base-sentiment",
-            return_all_scores=True # To easily access probabilities for ensembling
+            top_k=None # To easily access probabilities for ensembling
         )
     except Exception as e:
         logger.error(f"Failed to load XLM-RoBERTa model: {e}")
@@ -52,7 +52,7 @@ def load_sentiment_models() -> None:
         _indic_pipeline = pipeline(
             "text-classification",
             model="ai4bharat/IndicBERTv2",
-            return_all_scores=True
+            top_k=None
         )
     except Exception as e:
         logger.error(f"Failed to load IndicBERTv2 model: {e}")
@@ -98,7 +98,7 @@ def analyze_sentiment(text: str, language_code: str) -> Dict[str, Union[str, flo
         xlm_scores = _map_xlm_labels(xlm_out)
     except Exception as e:
         logger.error(f"XLM-RoBERTa inference failed: {e}")
-        return {"label": "neutral", "confidence": 0.0}
+        return {"label": "neutral", "confidence": 0.0, "error": True}
 
     # Check if we should ensemble with IndicBERT (hi, kn, te, ta)
     indic_languages = {"hi", "kn", "te", "ta"}

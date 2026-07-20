@@ -10,6 +10,7 @@ import { Book, LineChart, History } from 'lucide-react'
 function App() {
   const [activeTab, setActiveTab] = useState('journal')
   const [currentResult, setCurrentResult] = useState(null)
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
   
   // Lifted state to keep history across tabs (fetched from backend)
   const [entries, setEntries] = useState([])
@@ -83,12 +84,28 @@ function App() {
             
             {/* Left Column: Input */}
             <div className="flex flex-col gap-4">
-              <JournalInput onAnalyzeSuccess={handleAnalyzeSuccess} />
+              <JournalInput 
+                onAnalyzeSuccess={handleAnalyzeSuccess} 
+                onLoadingChange={setIsAnalyzing}
+              />
             </div>
 
             {/* Right Column: Results (if any) */}
-            <div className="flex flex-col gap-4">
-              {currentResult ? (
+            <div className="flex flex-col gap-4" aria-live="polite" aria-busy={isAnalyzing}>
+              {isAnalyzing ? (
+                <div className="glass rounded-2xl p-8 flex flex-col gap-6 w-full animate-pulse min-h-[300px]">
+                  <div className="h-6 bg-slate-700/50 rounded w-1/3 mb-2"></div>
+                  <div className="space-y-3">
+                    <div className="h-4 bg-slate-700/50 rounded w-full"></div>
+                    <div className="h-4 bg-slate-700/50 rounded w-5/6"></div>
+                    <div className="h-4 bg-slate-700/50 rounded w-4/6"></div>
+                  </div>
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                    <div className="h-20 bg-slate-700/50 rounded-xl"></div>
+                    <div className="h-20 bg-slate-700/50 rounded-xl"></div>
+                  </div>
+                </div>
+              ) : currentResult ? (
                 <>
                   <ResultCard result={currentResult} />
                   

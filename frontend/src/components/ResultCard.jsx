@@ -19,10 +19,15 @@ export default function ResultCard({ result }) {
       color: 'bg-orange-500/20 text-orange-400 border-orange-500/30',
       label: 'Noticed a difficult moment',
       bar: 'bg-orange-500'
+    },
+    error: {
+      color: 'bg-red-500/20 text-red-400 border-red-500/30',
+      label: 'Analysis unavailable',
+      bar: 'bg-red-500'
     }
   }
 
-  const config = sentimentConfig[sentiment.label] || sentimentConfig.neutral
+  const config = sentiment.error ? sentimentConfig.error : (sentimentConfig[sentiment.label] || sentimentConfig.neutral)
 
   return (
     <div className="glass rounded-2xl p-6 flex flex-col gap-4">
@@ -33,7 +38,7 @@ export default function ResultCard({ result }) {
         </h3>
         <div className="flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-400">
           <Globe2 size={12} />
-          {detected_language} ({Math.round(language_confidence * 100)}%)
+          Language: {detected_language} ({Math.round(language_confidence * 100)}%)
         </div>
       </div>
       
@@ -44,12 +49,14 @@ export default function ResultCard({ result }) {
         </div>
         
         {/* Progress Bar */}
-        <div className="h-2 w-full bg-slate-900/50 rounded-full overflow-hidden">
-          <div 
-            className={`h-full rounded-full transition-all duration-1000 ease-out ${config.bar}`}
-            style={{ width: `${sentiment.confidence * 100}%` }}
-          />
-        </div>
+        {!sentiment.error && (
+          <div className="h-2 w-full bg-slate-900/50 rounded-full overflow-hidden">
+            <div 
+              className={`h-full rounded-full transition-all duration-1000 ease-out ${config.bar}`}
+              style={{ width: `${sentiment.confidence * 100}%` }}
+            />
+          </div>
+        )}
       </div>
     </div>
   )

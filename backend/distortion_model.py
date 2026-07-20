@@ -22,6 +22,7 @@ DISTORTIONS = [
 # Global variables for model
 _distortion_tokenizer = None
 _distortion_model = None
+_best_thresholds = None
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "models", "distortion_model")
 
@@ -30,13 +31,23 @@ def load_distortion_model() -> None:
     Loads the fine-tuned DistilBERT model for multi-label cognitive distortion classification.
     Expects the model to be saved in /backend/models/distortion_model/
     """
-    global _distortion_tokenizer, _distortion_model
+    global _distortion_tokenizer, _distortion_model, _best_thresholds
     
     if os.path.exists(MODEL_PATH):
         logger.info(f"Loading custom distortion model from {MODEL_PATH}")
         try:
             _distortion_tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
             _distortion_model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+            
+            # Load thresholds if they exist
+            import json
+            thresh_path = os.path.join(MODEL_PATH, "best_thresholds.json")
+            if os.path.exists(thresh_path):
+                with open(thresh_path, 'r') as f:
+                    _best_thresholds = json.load(f)
+            else:
+                _best_thresholds = {str(i): 0.4 for i in range(len(DISTORTIONS))}
+                
         except Exception as e:
             logger.error(f"Failed to load custom distortion model: {e}")
     else:
@@ -53,7 +64,7 @@ def detect_distortions(text: str) -> List[Dict[str, Union[str, float]]]:
         List[Dict[str, Union[str, float]]]: A list containing the top detected distortion, if any.
         Format: [{'label': 'Overgeneralization', 'confidence': 0.88, 'trigger_phrase': '...'}]
     """
-    global _distortion_tokenizer, _distortion_model
+    global _distortion_tokenizer, _distortion_model, _best_thresholds
     
     if not text.strip():
         return []
@@ -87,7 +98,8 @@ def detect_distortions(text: str) -> List[Dict[str, Union[str, float]]]:
         
         detected = []
         for idx, prob in enumerate(probs):
-            if prob >= 0.4:  # Threshold for multi-label
+            thresh = _best_thresholds.get(str(idx), 0.4) if _best_thresholds else 0.4
+            if prob >= thresh:  # Dynamic threshold for multi-label
                 label = DISTORTIONS[idx]
                 if label != "No Distortion":
                     detected.append({
@@ -102,7 +114,7 @@ def detect_distortions(text: str) -> List[Dict[str, Union[str, float]]]:
         
     except Exception as e:
         logger.error(f"Distortion detection failed: {e}")
-        return []
+        return [{"error": True}]
 
 if __name__ == "__main__":
     load_distortion_model()

@@ -10,13 +10,16 @@ model = AutoModelForSequenceClassification.from_pretrained(model_dir)
 model.eval()
 
 import os
-threshold_path = os.path.join(model_dir, 'best_threshold.txt')
+import json
+threshold_path = os.path.join(model_dir, 'best_thresholds.json')
 if os.path.exists(threshold_path):
     with open(threshold_path, 'r') as f:
-        best_threshold = float(f.read().strip())
+        best_thresholds = json.load(f)
+        # Convert string keys to ints
+        best_thresholds = {int(k): float(v) for k, v in best_thresholds.items()}
 else:
-    best_threshold = 0.4
-print(f"Using threshold: {best_threshold}")
+    best_thresholds = {i: 0.4 for i in range(9)}
+print(f"Using per-class thresholds: {best_thresholds}")
 
 # 10 completely organic sentences, one for each core distortion + 1 no distortion
 organic_sentences = [
@@ -56,8 +59,8 @@ for text, true_label_str in organic_sentences:
     logits = outputs.logits
     probs = torch.sigmoid(logits).squeeze().tolist()
     
-    # Threshold using best_threshold
-    pred_vec = [1 if p >= best_threshold else 0 for p in probs]
+    # Threshold using best_thresholds
+    pred_vec = [1 if p >= best_thresholds[i] else 0 for i, p in enumerate(probs)]
     y_pred.append(pred_vec)
     
     # Ground truth

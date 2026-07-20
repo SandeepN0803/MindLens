@@ -1,2 +1,4 @@
 results/
 backend/models/
+__pycache__/
+*.db

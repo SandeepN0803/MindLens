@@ -13,6 +13,15 @@ export default function ThoughtPatterns({ distortions, reframings }) {
     )
   }
 
+  if (distortions[0]?.error) {
+    return (
+      <div className="glass rounded-2xl p-6 text-center text-red-400/80">
+        <BrainCircuit className="w-10 h-10 mx-auto mb-3 opacity-50" />
+        <p>Pattern analysis unavailable at this time.</p>
+      </div>
+    )
+  }
+
   const handleToggle = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index)
   }

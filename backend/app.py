@@ -22,10 +22,7 @@ app = Flask(__name__)
 # Initialize database on startup
 init_db()
 
-@app.route("/", methods=["GET"])
-def index():
-    return render_template("index.html")
-
+# The React frontend proxies to /api/... endpoints.
 @app.route("/api/analyze", methods=["POST"])
 def analyze():
     """

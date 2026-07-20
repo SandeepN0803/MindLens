@@ -197,21 +197,29 @@ def main():
     
     output_path = "data/synthetic_distortions_en_ollama.csv"
     # Ensure file is clear or write headers if it doesn't exist
-    if not os.path.exists("data"):
-        os.makedirs("data")
-    pd.DataFrame(columns=["text", "distortion_label", "language"]).to_csv(output_path, index=False)
+    if not os.path.exists(output_path):
+        if not os.path.exists("data"):
+            os.makedirs("data")
+        pd.DataFrame(columns=["text", "distortion_label", "language"]).to_csv(output_path, index=False)
+        existing_df = pd.DataFrame(columns=["text", "distortion_label", "language"])
+    else:
+        existing_df = pd.read_csv(output_path)
 
     # Regex for trigger words
     trigger_regex = re.compile(r'\b(always|never|should|must|ought|ruin|disaster|hate|completely|worthless|everyone|nobody|fault|terrible|useless|stupid)\b', re.IGNORECASE)
 
     for category, spec in CATEGORIES.items():
         print(f"\n--- Generating for: {category} ---")
-        category_entries = set()
-        trigger_count = 0
+        
+        # Load existing entries for this category
+        cat_existing = existing_df[existing_df['distortion_label'] == category]
+        category_entries = set(cat_existing['text'].dropna().tolist())
+        trigger_count = sum(bool(trigger_regex.search(str(text))) for text in category_entries)
         
         # Generate 100 unique entries per category
         target = 100
         trigger_budget = int(target * 0.20)  # max 20 trigger entries
+
         
         batch_size = 50
         max_attempts = 15

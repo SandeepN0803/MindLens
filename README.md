@@ -8,7 +8,7 @@ MindLens runs a multi-layered NLP pipeline to extract meaningful insights from j
 
 1. **Language Detection**: Automatically identifies the language of the journal entry (using `langdetect`).
 2. **Sentiment & Emotion Analysis**: Leverages robust models like XLM-RoBERTa and DistilRoBERTa to classify sentiment (Positive/Negative/Neutral) and specific emotions (Joy, Fear, Anger, etc.).
-3. **Cognitive Distortion Detection**: Currently uses a **keyword-based heuristics fallback** (e.g. flagging "always/never" as *Overgeneralization*). The codebase is fully prepared for a custom-trained DistilBERT model to classify 10 CBT-defined cognitive distortions once fine-tuned on a labeled dataset.
+3. **Cognitive Distortion Detection**: Leverages a fine-tuned DistilBERT model trained on a ~950-row synthetic dataset (generated via Llama 3.1 8B with mixed strict/relaxed trigger-word caps) to perform multi-label classification across 9 CBT-defined cognitive distortion categories. The model currently achieves an organic Macro F1 score of 41.5%.
 4. **Reframing Engine**: Suggests healthier, alternative perspectives for detected distortions.
 
 ## 🔒 Privacy & Local Inference
@@ -32,10 +32,18 @@ Unlike most mental health applications that send sensitive journal data to exter
    ```bash
    python backend/app.py
    ```
-   The Flask server will start on `http://127.0.0.1:5001`.
+   The Flask server will start on `http://127.0.0.1:5001` (API only, no UI).
 
-4. **Run the Gradio Demo:**
-   To launch the interactive web interface (great for HuggingFace Spaces deployment):
+4. **Run the React Frontend:**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser.
+
+5. **Run the Gradio Demo (Optional):**
+   To launch a quick interactive generic web interface:
    ```bash
    python gradio_app.py
    ```
