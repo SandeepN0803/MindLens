@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-100 antialiased;
+    @apply bg-surface text-on-surface antialiased font-sans;
   }
 }
 
 @utility glass {
-  @apply bg-slate-800/60 backdrop-blur-md border border-slate-700/50 shadow-xl;
+  background: rgba(31, 31, 35, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }

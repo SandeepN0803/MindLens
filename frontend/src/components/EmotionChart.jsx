@@ -6,9 +6,9 @@ export default function EmotionChart({ emotions }) {
   
   if (emotions[0]?.error) {
     return (
-      <div className="glass rounded-2xl p-6 text-center text-red-400/80">
+      <div className="glass rounded-lg p-[20px] text-center text-error bg-error-container/10">
         <Activity className="w-10 h-10 mx-auto mb-3 opacity-50" />
-        <p>Emotion analysis unavailable at this time.</p>
+        <p className="text-[16px]">Emotion analysis unavailable at this time.</p>
       </div>
     )
   }
@@ -19,23 +19,23 @@ export default function EmotionChart({ emotions }) {
     confidence: Math.round(e.confidence * 100)
   }))
 
-  // Color mapping based on emotion
+  // Color mapping based on new palette tokens
   const getEmotionColor = (label) => {
     switch (label.toLowerCase()) {
-      case 'joy': return '#10b981' // emerald
-      case 'sadness': return '#6366f1' // indigo
-      case 'anger': return '#f43f5e' // rose
-      case 'fear': return '#8b5cf6' // violet
-      case 'disgust': return '#14b8a6' // teal
-      case 'surprise': return '#f59e0b' // amber
-      default: return '#64748b' // slate
+      case 'joy': return '#81b29a' // sentiment-positive
+      case 'sadness': return '#b4b7ff' // primary
+      case 'anger': return '#e07a5f' // sentiment-negative
+      case 'fear': return '#e3badb' // tertiary
+      case 'disgust': return '#c2c5dd' // secondary
+      case 'surprise': return '#ffd7f4' // on-tertiary-container
+      default: return '#94a3b8' // sentiment-neutral
     }
   }
 
   return (
-    <div className="glass rounded-2xl p-6">
-      <h3 className="text-lg font-semibold flex items-center gap-2 mb-6">
-        <Activity size={18} className="text-indigo-400" />
+    <div className="glass rounded-lg p-[20px]">
+      <h3 className="text-[18px] font-semibold flex items-center gap-2 mb-6 text-on-surface">
+        <Activity size={18} className="text-primary" />
         Detected Emotions
       </h3>
       
@@ -52,12 +52,12 @@ export default function EmotionChart({ emotions }) {
               dataKey="name" 
               axisLine={false} 
               tickLine={false}
-              tick={{ fill: '#cbd5e1', fontSize: 14 }}
+              tick={{ fill: '#c8c5d0', fontSize: 14 }}
               width={80}
             />
             <Tooltip 
               cursor={{ fill: 'rgba(255,255,255,0.05)' }}
-              contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '12px', color: '#f1f5f9' }}
+              contentStyle={{ backgroundColor: '#1f1f23', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', color: '#e4e1e6' }}
               formatter={(value) => [`${value}%`, 'Confidence']}
             />
             <Bar dataKey="confidence" radius={[0, 4, 4, 0]} barSize={24}>

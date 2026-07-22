@@ -26,21 +26,21 @@ export default function MoodTimeline({ entries }) {
   }).sort((a, b) => a.originalDate - b.originalDate)
 
   return (
-    <div className="glass rounded-2xl p-6">
-      <h3 className="text-lg font-semibold flex items-center gap-2 mb-6">
-        <TrendingUp size={18} className="text-indigo-400" />
+    <div className="glass rounded-lg p-[20px]">
+      <h3 className="text-[18px] font-semibold flex items-center gap-2 mb-6 text-on-surface">
+        <TrendingUp size={18} className="text-primary" />
         Mood Trend
       </h3>
       
       <div className="h-64 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#334155" vertical={false} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#47464f" vertical={false} />
             <XAxis 
               dataKey="date" 
               axisLine={false} 
               tickLine={false}
-              tick={{ fill: '#cbd5e1', fontSize: 12 }}
+              tick={{ fill: '#c8c5d0', fontSize: 12 }}
               dy={10}
             />
             <YAxis 
@@ -54,11 +54,11 @@ export default function MoodTimeline({ entries }) {
                 if (val === -1) return 'Negative'
                 return ''
               }}
-              tick={{ fill: '#94a3b8', fontSize: 12 }}
+              tick={{ fill: '#c8c5d0', fontSize: 12 }}
             />
             <Tooltip 
-              contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: '8px', color: '#f1f5f9' }}
-              labelStyle={{ color: '#94a3b8', marginBottom: '4px' }}
+              contentStyle={{ backgroundColor: '#1f1f23', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#e4e1e6' }}
+              labelStyle={{ color: '#c8c5d0', marginBottom: '4px' }}
               formatter={(value) => {
                 if (value > 0) return ['Positive', 'Mood']
                 if (value < 0) return ['Negative', 'Mood']
@@ -68,10 +68,10 @@ export default function MoodTimeline({ entries }) {
             <Line 
               type="monotone" 
               dataKey="score" 
-              stroke="#818cf8" 
+              stroke="#b4b7ff" 
               strokeWidth={3}
-              dot={{ fill: '#818cf8', strokeWidth: 2, r: 4 }}
-              activeDot={{ r: 6, fill: '#6366f1' }}
+              dot={{ fill: '#b4b7ff', strokeWidth: 2, r: 4 }}
+              activeDot={{ r: 6, fill: '#333678' }}
             />
           </LineChart>
         </ResponsiveContainer>

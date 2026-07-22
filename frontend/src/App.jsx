@@ -39,45 +39,73 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col items-center py-10 px-4 md:px-8">
+    <div className="min-h-screen bg-surface text-on-surface flex flex-col items-center pb-32 md:pb-10 px-4 md:px-8 font-sans">
       
-      {/* Header */}
-      <header className="max-w-4xl w-full flex flex-col items-center mb-10 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400 tracking-tight mb-2">
+      {/* TopAppBar */}
+      <header className="max-w-4xl w-full flex items-center justify-center py-6 mb-4 md:mb-10">
+        <h1 className="text-[32px] md:text-[57px] font-bold text-primary tracking-tight leading-tight">
           MindLens
         </h1>
-        <p className="text-slate-400 max-w-lg">
-          Your multilingual mental health journal. Write your thoughts safely, and let AI help you find perspective.
-        </p>
       </header>
 
-      {/* Tabs */}
-      <div className="flex bg-slate-800/50 p-1 rounded-2xl mb-8 border border-slate-700/50">
+      {/* Desktop Navigation (Hidden on mobile) */}
+      <div className="hidden md:flex bg-surface-container-low p-1 rounded-xl mb-8 border border-outline-variant/30 shadow-sm">
         <button 
           onClick={() => setActiveTab('journal')}
-          className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium transition-all ${activeTab === 'journal' ? 'bg-indigo-500/20 text-indigo-300 shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+          className={`flex items-center gap-2 px-6 py-2.5 rounded-lg font-medium transition-all ${activeTab === 'journal' ? 'bg-primary-container text-on-primary-container shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
         >
           <Book size={18} />
           Journal
         </button>
         <button 
           onClick={() => setActiveTab('history')}
-          className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium transition-all ${activeTab === 'history' ? 'bg-indigo-500/20 text-indigo-300 shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+          className={`flex items-center gap-2 px-6 py-2.5 rounded-lg font-medium transition-all ${activeTab === 'history' ? 'bg-primary-container text-on-primary-container shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
         >
           <History size={18} />
           History
         </button>
         <button 
           onClick={() => setActiveTab('analytics')}
-          className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium transition-all ${activeTab === 'analytics' ? 'bg-indigo-500/20 text-indigo-300 shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+          className={`flex items-center gap-2 px-6 py-2.5 rounded-lg font-medium transition-all ${activeTab === 'analytics' ? 'bg-primary-container text-on-primary-container shadow-sm' : 'text-on-surface-variant hover:text-on-surface'}`}
         >
           <LineChart size={18} />
           Analytics
         </button>
       </div>
 
+      {/* Mobile Bottom Navigation */}
+      <div className="md:hidden fixed bottom-0 left-0 w-full z-[100] glass border-t border-outline-variant/30 rounded-t-xl px-2 pb-6 pt-3 flex justify-around items-center">
+        <button 
+          onClick={() => setActiveTab('journal')}
+          className={`flex flex-col items-center gap-1 p-2 w-20 transition-all ${activeTab === 'journal' ? 'text-primary' : 'text-on-surface-variant'}`}
+        >
+          <div className={`p-1.5 rounded-full ${activeTab === 'journal' ? 'bg-primary-container' : 'transparent'}`}>
+            <Book size={20} className={activeTab === 'journal' ? 'text-on-primary-container' : ''} />
+          </div>
+          <span className="text-[10px] font-medium">Journal</span>
+        </button>
+        <button 
+          onClick={() => setActiveTab('history')}
+          className={`flex flex-col items-center gap-1 p-2 w-20 transition-all ${activeTab === 'history' ? 'text-primary' : 'text-on-surface-variant'}`}
+        >
+          <div className={`p-1.5 rounded-full ${activeTab === 'history' ? 'bg-primary-container' : 'transparent'}`}>
+            <History size={20} className={activeTab === 'history' ? 'text-on-primary-container' : ''} />
+          </div>
+          <span className="text-[10px] font-medium">History</span>
+        </button>
+        <button 
+          onClick={() => setActiveTab('analytics')}
+          className={`flex flex-col items-center gap-1 p-2 w-20 transition-all ${activeTab === 'analytics' ? 'text-primary' : 'text-on-surface-variant'}`}
+        >
+          <div className={`p-1.5 rounded-full ${activeTab === 'analytics' ? 'bg-primary-container' : 'transparent'}`}>
+            <LineChart size={20} className={activeTab === 'analytics' ? 'text-on-primary-container' : ''} />
+          </div>
+          <span className="text-[10px] font-medium">Analytics</span>
+        </button>
+      </div>
+
       {/* Main Content Area */}
-      <main className="max-w-4xl w-full flex flex-col gap-6">
+      <main className="max-w-4xl w-full flex flex-col gap-[32px]">
         
         {activeTab === 'journal' && (
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
@@ -91,18 +119,18 @@ function App() {
             </div>
 
             {/* Right Column: Results (if any) */}
-            <div className="flex flex-col gap-4" aria-live="polite" aria-busy={isAnalyzing}>
+            <div className="flex flex-col gap-[12px]" aria-live="polite" aria-busy={isAnalyzing}>
               {isAnalyzing ? (
-                <div className="glass rounded-2xl p-8 flex flex-col gap-6 w-full animate-pulse min-h-[300px]">
-                  <div className="h-6 bg-slate-700/50 rounded w-1/3 mb-2"></div>
+                <div className="glass rounded-lg p-[20px] flex flex-col gap-6 w-full animate-pulse min-h-[300px]">
+                  <div className="h-6 bg-surface-container-highest rounded-sm w-1/3 mb-2"></div>
                   <div className="space-y-3">
-                    <div className="h-4 bg-slate-700/50 rounded w-full"></div>
-                    <div className="h-4 bg-slate-700/50 rounded w-5/6"></div>
-                    <div className="h-4 bg-slate-700/50 rounded w-4/6"></div>
+                    <div className="h-4 bg-surface-container-high rounded-sm w-full"></div>
+                    <div className="h-4 bg-surface-container-high rounded-sm w-5/6"></div>
+                    <div className="h-4 bg-surface-container-high rounded-sm w-4/6"></div>
                   </div>
-                  <div className="mt-4 grid grid-cols-2 gap-4">
-                    <div className="h-20 bg-slate-700/50 rounded-xl"></div>
-                    <div className="h-20 bg-slate-700/50 rounded-xl"></div>
+                  <div className="mt-4 grid grid-cols-2 gap-[12px]">
+                    <div className="h-20 bg-surface-container-high rounded-md"></div>
+                    <div className="h-20 bg-surface-container-high rounded-md"></div>
                   </div>
                 </div>
               ) : currentResult ? (
@@ -119,9 +147,9 @@ function App() {
                   />
                 </>
               ) : (
-                <div className="glass rounded-2xl p-8 flex flex-col items-center justify-center text-center h-full min-h-[300px] text-slate-500">
-                  <Book className="w-12 h-12 mb-4 opacity-50" />
-                  <p>Write an entry to see your personalized analysis here.</p>
+                <div className="glass rounded-lg p-[20px] flex flex-col items-center justify-center text-center h-full min-h-[300px] text-on-surface-variant">
+                  <Book className="w-12 h-12 mb-4 opacity-30 text-primary" />
+                  <p className="text-[16px]">Write an entry to see your personalized analysis here.</p>
                 </div>
               )}
             </div>
@@ -130,21 +158,21 @@ function App() {
         )}
 
         {activeTab === 'history' && (
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-[12px]">
             {isLoadingHistory ? (
-              <div className="glass rounded-2xl p-8 text-center text-slate-400">Loading history...</div>
+              <div className="glass rounded-lg p-[20px] text-center text-on-surface-variant">Loading history...</div>
             ) : entries.length === 0 ? (
-              <div className="glass rounded-2xl p-8 text-center text-slate-400">
+              <div className="glass rounded-lg p-[20px] text-center text-on-surface-variant">
                 No entries yet. Head to the Journal tab to write your first!
               </div>
             ) : (
               entries.map((entry, idx) => (
-                <div key={entry.entry_id || idx} className="glass rounded-2xl p-6">
-                  <div className="text-sm text-slate-500 mb-2">
+                <div key={entry.entry_id || idx} className="glass rounded-lg p-[20px]">
+                  <div className="text-[12px] text-on-surface-variant mb-2 font-medium tracking-wide uppercase">
                     {new Date(entry.timestamp).toLocaleString()}
                   </div>
-                  <p className="text-slate-200 mb-4 whitespace-pre-wrap">{entry.input_text}</p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <p className="text-[16px] text-on-surface mb-4 whitespace-pre-wrap">{entry.input_text}</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[12px]">
                     <ResultCard result={entry} />
                     <ThoughtPatterns distortions={entry.distortions} reframings={entry.reframings} />
                   </div>
@@ -155,15 +183,15 @@ function App() {
         )}
 
         {activeTab === 'analytics' && (
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-[32px]">
             {isLoadingHistory ? (
-              <div className="glass rounded-2xl p-8 text-center text-slate-400">Loading analytics...</div>
+              <div className="glass rounded-lg p-[20px] text-center text-on-surface-variant">Loading analytics...</div>
             ) : entries.length === 0 ? (
-              <div className="glass rounded-2xl p-8 text-center text-slate-400">
+              <div className="glass rounded-lg p-[20px] text-center text-on-surface-variant">
                 Not enough data for analytics. Start journaling to see your trends!
               </div>
             ) : (
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[32px] items-start">
                 <MoodTimeline entries={entries} />
                 <PatternHeatmap entries={entries} />
               </div>

@@ -36,10 +36,10 @@ export default function JournalInput({ onAnalyzeSuccess, onLoadingChange }) {
   }
 
   return (
-    <div className="glass rounded-2xl p-6 flex flex-col relative overflow-hidden transition-all focus-within:ring-2 focus-within:ring-indigo-500/50">
+    <div className="glass rounded-lg p-[20px] flex flex-col relative overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary/50">
       
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold text-slate-100 flex items-center gap-2">
+        <h2 className="text-[22px] font-medium text-on-surface flex items-center gap-2 leading-title">
           New Entry
         </h2>
         {/* We can add real-time language detection ping here later if needed */}
@@ -49,18 +49,18 @@ export default function JournalInput({ onAnalyzeSuccess, onLoadingChange }) {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="How are you feeling right now? What's on your mind? (Supports English, Hindi, Kannada, Telugu, Tamil)"
-        className="w-full min-h-[200px] resize-y bg-transparent border-none focus:ring-0 text-slate-200 placeholder-slate-500 text-lg leading-relaxed outline-none"
+        className="w-full min-h-[200px] resize-y bg-transparent border-none focus:ring-0 text-on-surface placeholder-outline-variant text-[16px] leading-body outline-none"
       />
 
-      <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-700/50">
-        <span className="text-sm text-slate-500">
+      <div className="flex items-center justify-between mt-6 pt-4 border-t border-outline-variant/30">
+        <span className="text-[12px] font-medium text-on-surface-variant">
           {text.length} characters
         </span>
         <button
           onClick={handleAnalyze}
           disabled={loading || text.trim().length === 0}
-          className={`flex items-center gap-2 px-6 py-2.5 rounded-xl font-medium transition-all
-            ${loading ? 'bg-indigo-600/50 text-indigo-200 cursor-wait' : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-lg hover:shadow-indigo-500/25'}
+          className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all
+            ${loading ? 'bg-primary-container text-on-primary-container cursor-wait' : 'bg-primary hover:opacity-90 text-on-primary shadow-sm'}
             disabled:opacity-50 disabled:cursor-not-allowed`}
         >
           {loading ? (
@@ -73,7 +73,7 @@ export default function JournalInput({ onAnalyzeSuccess, onLoadingChange }) {
       </div>
 
       {error && (
-        <div className="mt-4 p-3 bg-red-500/20 text-red-200 rounded-lg text-sm border border-red-500/30" aria-live="assertive">
+        <div className="mt-4 p-3 bg-error-container text-on-error-container rounded-md text-[12px] font-medium border border-error/30" aria-live="assertive">
           {error}
         </div>
       )}
